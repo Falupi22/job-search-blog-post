@@ -1,32 +1,13 @@
 import React from 'react';
 import { Box, Typography, Paper, Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Chip } from '@mui/material';
 import { Interview } from '../../types';
-
-const mockInterviews: Interview[] = [
-  {
-    id: '1',
-    company: 'Tech Corp',
-    position: 'Frontend Developer',
-    date: '2024-02-15',
-    stage: 'Technical',
-    notes: 'Discussed React, TypeScript, and system design',
-    status: 'passed'
-  },
-  {
-    id: '2',
-    company: 'StartupX',
-    position: 'Full Stack Developer',
-    date: '2024-02-10',
-    stage: 'Final',
-    notes: 'Team culture fit interview',
-    status: 'pending'
-  }
-];
+import data from '../../../data/data.json'
 
 const getStatusColor = (status: Interview['status']) => {
   const colors = {
     passed: 'success',
     failed: 'error',
+    mismatch: 'error',
     pending: 'warning'
   };
   return colors[status];
@@ -43,7 +24,8 @@ const InterviewList: React.FC = () => {
           <TableHead>
             <TableRow>
               <TableCell>Date</TableCell>
-              <TableCell>Company</TableCell>
+              <TableCell>Company Type</TableCell>
+              <TableCell>Product Type</TableCell>
               <TableCell>Position</TableCell>
               <TableCell>Stage</TableCell>
               <TableCell>Status</TableCell>
@@ -51,14 +33,15 @@ const InterviewList: React.FC = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {mockInterviews.map((interview) => (
+            {(data.interviews as Interview[]).reverse().map((interview) => (
               <TableRow key={interview.id}>
                 <TableCell>{new Date(interview.date).toLocaleDateString()}</TableCell>
-                <TableCell>{interview.company}</TableCell>
+                <TableCell>{interview.companyType}</TableCell>
+                <TableCell>{interview.productType}</TableCell>
                 <TableCell>{interview.position}</TableCell>
                 <TableCell>{interview.stage}</TableCell>
                 <TableCell>
-                  <Chip 
+                  <Chip
                     label={interview.status}
                     color={getStatusColor(interview.status) as any}
                     size="small"

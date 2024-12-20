@@ -1,0 +1,133 @@
+{
+    "general": {
+        "totalApplications": 160,
+        "rejections": 60,
+        "interestedCompanies": 10,
+        "interviews": 20,
+        "offers": 2,
+        "averageResponseTime": 14
+    },
+    "interviews": [
+        {
+            "id": "1",
+            "companyType": "Startup",
+            "productType": "Enterprise, cybersecurity",
+            "position": "Full Stack Developer",
+            "date": "9-8-2024",
+            "stage": "Recruiter",
+            "method": "Phone call",
+            "notes": "Discussed my resume and company's main product",
+            "status": "mismatch"
+        },
+        {
+            "id": "2",
+            "companyType": "Startup",
+            "productType": "Enterprise, AI, Virtualization",
+            "position": "Full Stack Developer",
+            "date": "9-8-2024",
+            "stage": "Recruiter",
+            "method": "Phone call",
+            "notes": "Discussed my resume and company's main product",
+            "status": "mismatch"
+        },
+        {
+            "id": "3",
+            "companyType": "Startup",
+            "productType": "Enterprise, cybersecurity",
+            "position": "Full Stack Developer",
+            "date": "9-9-2024",
+            "stage": "Recruiter",
+            "method": "Phone call",
+            "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
+            "status": "mismatch"
+        },
+        {
+            "id": "4",
+            "companyType": "Startup",
+            "productType": "Enterprise, cybersecurity",
+            "position": "Full Stack Developer",
+            "date": "9-12-2024",
+            "stage": "Recruiter",
+            "method": "Phone call",
+            "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
+            "status": "mismatch"
+        },
+        {
+            "id": "4",
+            "companyType": "Startup",
+            "productType": "Enterprise, cybersecurity",
+            "position": "Full Stack Developer",
+            "date": "9-18-2024",
+            "stage": "Recruiter",
+            "method": "Phone call",
+            "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
+            "status": "mismatch"
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "title": "Job Search Tracker",
+            "description": "A full-stack application to track job applications and interview progress, built with React and TypeScript.",
+            "technologies": [
+                "React",
+                "TypeScript",
+                "Material-UI",
+                "Firebase"
+            ],
+            "imageUrl": "images/jobSearch.png",
+            "githubUrl": "https://github.com/Falupi22/job-search-blog-post",
+            "liveUrl": "https://job-tracker.demo.com"
+        },
+        {
+            "id": "2",
+            "title": "Mechanic Workshop Appointment Scheduler",
+            "description": "A basic appointment scheduler for a bike workshop.",
+            "technologies": [
+                "React",
+                "TypeScript",
+                "ChakraUI",
+                "Node.js",
+                "MongoDB"
+            ],
+            "imageUrl": "images/trekanic.png",
+            "githubUrl": "https://github.com/Falupi22/trekanic",
+            "liveUrl": "https://portfolio.demo.com"
+        },
+        {
+            "id": "3",
+            "title": "Minecraft AI PixelArt Plugin",
+            "description": "A Minecraft plugin that creates a PixelArt out of a prompt.",
+            "technologies": [
+                "Java",
+                "CraftBukkit (Minexcraft Server)"
+            ],
+            "imageUrl": "images/pixelArt.png",
+            "githubUrl": "https://github.com/Falupi22/ai-pixelart-mc-plugin",
+            "liveUrl": "https://portfolio.demo.com"
+        },
+        {
+            "id": "4",
+            "title": "Wifi Auto Connect Service",
+            "description": "The application that makes sure you stay online by handling network connections for you!",
+            "technologies": [
+                "Python",
+                "TkInter"
+            ],
+            "imageUrl": "images/wibye.png",
+            "githubUrl": "https://github.com/Falupi22/wi-bye",
+            "liveUrl": "https://portfolio.demo.com"
+        },
+        {
+            "id": "5",
+            "title": "Useful Chrome Extensions",
+            "description": "A curated list of useful extensions for daily usage of Chrome, tailored for developers and normal users alike.",
+            "technologies": [
+                "Javascript"
+            ],
+            "imageUrl": "images/extensions.png",
+            "githubUrl": "https://github.com/Falupi22/useful-chrome-extensions",
+            "liveUrl": "https://portfolio.demo.com"
+        }
+    ]
+}

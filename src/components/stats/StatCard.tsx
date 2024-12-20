@@ -7,7 +7,7 @@ interface StatCardProps {
   total: number;
 }
 
-export const StatCard: React.FC<StatCardProps> = ({ label, value, total }) => {
+export const StatCard: React.FC<StatCardProps> = ({ label, value }) => {
   return (
     <Card>
       <CardContent>
@@ -15,11 +15,6 @@ export const StatCard: React.FC<StatCardProps> = ({ label, value, total }) => {
           {label.replace(/([A-Z])/g, ' $1').toUpperCase()}
         </Typography>
         <Typography variant="h5">{value}</Typography>
-        <LinearProgress
-          variant="determinate"
-          value={(value / total) * 100}
-          sx={{ mt: 2 }}
-        />
       </CardContent>
     </Card>
   );

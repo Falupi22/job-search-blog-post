@@ -3,30 +3,25 @@ import { Box, Typography } from '@mui/material';
 import StatsGrid from '../components/stats/StatsGrid';
 import StatsChart from '../components/stats/StatsChart';
 import { JobSearchStats } from '../types';
+import data from "../../data/data.json"
 
-const mockStats: JobSearchStats = {
-  totalApplications: 150,
-  rejections: 80,
-  interviews: 20,
-  offers: 2,
-  averageResponseTime: 14,
-};
 
 export const Dashboard: React.FC = () => {
   return (
     <Box>
       <Typography variant="h4" gutterBottom>
-        Job Search Journey
-      </Typography>
-      
-      <Typography variant="body1" paragraph>
-        My journey began three months ago when I decided to transition into tech. 
-        Through persistence and continuous learning, I've been working towards my goal 
-        of becoming a software developer.
+        A Long, Challenging Journey
       </Typography>
 
-      <StatsGrid stats={mockStats} />
-      <StatsChart stats={mockStats} />
+      <Typography variant="body1" paragraph>
+        My journey began three months ago while I was travelling across America.
+        Since I decided to look for a job while on career break, I devoted myself to the challenging process,
+        while tracking it and gathering information and statistics, to help me and more candidates
+        with their process.
+      </Typography>
+
+      <StatsGrid stats={data.general} />
+      <StatsChart stats={data.general} />
     </Box>
   );
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Typography, Grid } from '@mui/material';
 import ProjectCard from './ProjectCard';
 import { Project } from '../../types';
+import data from '../../../data/data.json'
 
 const mockProjects: Project[] = [
   {
@@ -34,7 +35,7 @@ const Portfolio: React.FC = () => {
         Here are some of the projects I've worked on during my journey as a developer.
       </Typography>
       <Grid container spacing={3}>
-        {mockProjects.map((project) => (
+        {data.projects.map((project) => (
           <Grid item xs={12} md={6} key={project.id}>
             <ProjectCard project={project} />
           </Grid>

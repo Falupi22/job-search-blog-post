@@ -22,7 +22,7 @@ export const Navigation: React.FC = () => {
     <AppBar position="static">
       <Toolbar>
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Job Search Tracker
+          My Job Search Tracker
         </Typography>
         <Box sx={{ display: 'flex', gap: 2 }}>
           <NavigationLinks />

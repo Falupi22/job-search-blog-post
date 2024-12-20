@@ -4,10 +4,11 @@ import StatCard from './StatCard';
 import { JobSearchStats } from '../../types';
 
 interface StatsGridProps {
-  stats: JobSearchStats;
+  stats: object
 }
 
 export const StatsGrid: React.FC<StatsGridProps> = ({ stats }) => {
+  console.log(Object.entries(stats));
   return (
     <Grid container spacing={3} sx={{ mb: 4 }}>
       {Object.entries(stats).map(([key, value]) => (
@@ -15,7 +16,7 @@ export const StatsGrid: React.FC<StatsGridProps> = ({ stats }) => {
           <StatCard
             label={key}
             value={value}
-            total={stats.totalApplications}
+            total={200}
           />
         </Grid>
       ))}

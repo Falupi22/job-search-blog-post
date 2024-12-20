@@ -1,6 +1,7 @@
 export interface Interview {
   id: string;
-  company: string;
+  companyType: string;
+  productType: string;
   position: string;
   date: string;
   stage: string;
