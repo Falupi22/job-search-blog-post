@@ -69,12 +69,7 @@
             "id": "1",
             "title": "Job Search Tracker",
             "description": "A full-stack application to track job applications and interview progress, built with React and TypeScript.",
-            "technologies": [
-                "React",
-                "TypeScript",
-                "Material-UI",
-                "Firebase"
-            ],
+            "technologies": ["React", "TypeScript", "Material-UI", "Firebase"],
             "imageUrl": "images/jobSearch.png",
             "githubUrl": "https://github.com/Falupi22/job-search-blog-post",
             "liveUrl": "https://job-tracker.demo.com"
@@ -98,10 +93,7 @@
             "id": "3",
             "title": "Minecraft AI PixelArt Plugin",
             "description": "A Minecraft plugin that creates a PixelArt out of a prompt.",
-            "technologies": [
-                "Java",
-                "CraftBukkit (Minexcraft Server)"
-            ],
+            "technologies": ["Java", "CraftBukkit (Minexcraft Server)"],
             "imageUrl": "images/pixelArt.png",
             "githubUrl": "https://github.com/Falupi22/ai-pixelart-mc-plugin",
             "liveUrl": "https://portfolio.demo.com"
@@ -110,10 +102,7 @@
             "id": "4",
             "title": "Wifi Auto Connect Service",
             "description": "The application that makes sure you stay online by handling network connections for you!",
-            "technologies": [
-                "Python",
-                "TkInter"
-            ],
+            "technologies": ["Python", "TkInter"],
             "imageUrl": "images/wibye.png",
             "githubUrl": "https://github.com/Falupi22/wi-bye",
             "liveUrl": "https://portfolio.demo.com"
@@ -122,9 +111,7 @@
             "id": "5",
             "title": "Useful Chrome Extensions",
             "description": "A curated list of useful extensions for daily usage of Chrome, tailored for developers and normal users alike.",
-            "technologies": [
-                "Javascript"
-            ],
+            "technologies": ["Javascript"],
             "imageUrl": "images/extensions.png",
             "githubUrl": "https://github.com/Falupi22/useful-chrome-extensions",
             "liveUrl": "https://portfolio.demo.com"
