@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import {
     Box,
     Typography,
@@ -10,34 +10,19 @@ import {
     TableHead,
     TableRow,
     Chip,
-    Button,
-    Dialog,
-    DialogActions,
-    DialogContent,
-    DialogContentText,
-    DialogTitle,
     useTheme,
 } from '@mui/material'
 import { Interview } from '../../types'
 import dayjs from 'dayjs'
-import { IconWithToolTip } from '../../icons/Icons'
+import { getStatusColor } from './StatusColor'
+import { DATE_FORMAT } from '../../global/formats'
+import { InterviewDialog } from './InterviewDialog'
 
-const getStatusColor = (status: Interview['status']) => {
-    const colors = {
-        passed: 'success',
-        failed: 'error',
-        mismatch: 'idle',
-        match: 'success',
-        pending: 'warning',
-    }
-    return colors[status]
-}
-
-interface InteviewListProps {
+interface InterviewListProps {
     interviews: Array<Interview>
 }
 
-const InterviewList = ({ interviews }: InteviewListProps) => {
+const InterviewList = ({ interviews }: InterviewListProps) => {
     const theme = useTheme()
     const [open, setOpen] = useState(false)
     const [selectedInterview, setSelectedInterview] =
@@ -100,7 +85,7 @@ const InterviewList = ({ interviews }: InteviewListProps) => {
                                 >
                                     <TableCell>
                                         {dayjs(interview.date).format(
-                                            'DD.MM.YYYY',
+                                            DATE_FORMAT,
                                         )}
                                     </TableCell>
                                     <TableCell>
@@ -137,109 +122,11 @@ const InterviewList = ({ interviews }: InteviewListProps) => {
                     </TableBody>
                 </Table>
             </TableContainer>
-            <Dialog open={open} onClose={handleClose}>
-                <DialogContent>
-                    {selectedInterview && (
-                        <Box>
-                            <Box
-                                display='flex'
-                                justifyContent='flex-start'
-                                alignItems='center'
-                                width='100%'
-                                p={0}
-                            >
-                                <DialogTitle
-                                    sx={{ paddingLeft: 0, flexGrow: 1 }}
-                                >
-                                    Interview Details
-                                </DialogTitle>
-                                <Chip
-                                    label={selectedInterview.status}
-                                    color={
-                                        getStatusColor(
-                                            selectedInterview.status,
-                                        ) as
-                                            | 'default'
-                                            | 'primary'
-                                            | 'secondary'
-                                            | 'error'
-                                            | 'info'
-                                            | 'success'
-                                            | 'warning'
-                                    }
-                                    size='small'
-                                    sx={{ marginLeft: 3 }}
-                                />
-                                <Box
-                                    display='flex'
-                                    justifyContent='space-between'
-                                    alignItems='center'
-                                    marginLeft={1}
-                                >
-                                    {selectedInterview.productType.map(
-                                        productType => (
-                                            <IconWithToolTip
-                                                type={productType}
-                                            />
-                                        ),
-                                    )}
-                                </Box>
-                            </Box>
-                            <DialogContentText>
-                                <strong>Date:</strong>{' '}
-                                {dayjs(selectedInterview.date).format(
-                                    'DD/MM/YYYY',
-                                )}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Company Type:</strong>{' '}
-                                {selectedInterview.companyType}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Product Type:</strong>{' '}
-                                {selectedInterview.productType.join(', ')}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Position:</strong>{' '}
-                                {selectedInterview.position}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Stage:</strong>{' '}
-                                {selectedInterview.stage}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Method:</strong>{' '}
-                                {selectedInterview.method}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Status:</strong>{' '}
-                                {selectedInterview.status}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Location:</strong>{' '}
-                                {selectedInterview.location}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Duration:</strong>{' '}
-                                {selectedInterview.duration}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Interviewer:</strong>{' '}
-                                {selectedInterview.interviewer}
-                            </DialogContentText>
-                            <DialogContentText>
-                                <strong>Summary:</strong>{' '}
-                                {selectedInterview.summary}
-                            </DialogContentText>
-                        </Box>
-                    )}
-                </DialogContent>
-                <DialogActions>
-                    <Button onClick={handleClose} color='primary'>
-                        Close
-                    </Button>
-                </DialogActions>
-            </Dialog>
+            <InterviewDialog
+                open={open}
+                close={handleClose}
+                interview={selectedInterview}
+            />
         </Box>
     )
 }

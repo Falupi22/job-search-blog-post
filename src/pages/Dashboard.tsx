@@ -2,7 +2,6 @@ import React from 'react'
 import { Box, Typography } from '@mui/material'
 import StatsGrid from '../components/stats/StatsGrid'
 import StatsChart from '../components/stats/StatsChart'
-import { JobSearchStats } from '../types'
 import data from '../../data/data.json'
 
 export const Dashboard: React.FC = () => {
