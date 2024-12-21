@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card } from '@mui/material'
+import { Box, Card, Typography, useTheme } from '@mui/material'
 import {
     BarChart,
     Bar,
@@ -9,31 +9,43 @@ import {
     Tooltip,
     ResponsiveContainer,
 } from 'recharts'
-import { JobSearchStats } from '../../types'
 
 interface StatsChartProps {
-    stats: JobSearchStats
+    stats: Array<{ name: string; value: number }>
+    title: string
 }
 
-export const StatsChart: React.FC<StatsChartProps> = ({ stats }) => {
-    const chartData = [
-        { name: 'Applications', value: stats.totalApplications },
-        { name: 'Rejections', value: stats.rejections },
-        { name: 'Interviews', value: stats.interviews },
-        { name: 'Offers', value: stats.offers },
-    ]
-
+export const StatsChart: React.FC<StatsChartProps> = ({ stats, title }) => {
+    const theme = useTheme()
+    console.table(stats)
     return (
-        <Card sx={{ height: 400, p: 2 }}>
-            <ResponsiveContainer width='100%' height='100%'>
-                <BarChart data={chartData}>
-                    <CartesianGrid strokeDasharray='3 3' />
-                    <XAxis dataKey='name' />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar dataKey='value' fill='#2196f3' />
-                </BarChart>
-            </ResponsiveContainer>
+        <Card sx={{ width: '100%', height: '100%' }}>
+            <Box
+                width='100%'
+                height='400px'
+                display='flex'
+                flexDirection='column'
+                alignItems='center'
+            >
+                <Typography
+                    variant='h6'
+                    sx={{ textAlign: 'center', marginTop: theme.spacing(2) }}
+                >
+                    {title}
+                </Typography>
+                <ResponsiveContainer width='100%' height='100%'>
+                    <BarChart data={stats} barCategoryGap='10%'>
+                        <CartesianGrid strokeDasharray='2 2' />
+                        <XAxis dataKey='name' tick={{ fontSize: 12 }} />
+                        <YAxis tick={{ fontSize: 15 }} />
+                        <Tooltip />
+                        <Bar
+                            dataKey='value'
+                            fill={theme.palette.primary.main}
+                        />
+                    </BarChart>
+                </ResponsiveContainer>
+            </Box>
         </Card>
     )
 }

@@ -8,7 +8,7 @@ import Portfolio from './pages/portfolio/Portfolio'
 import Blog from './pages/blog/Blog'
 import About from './pages/about/About'
 import data from '../data/data.json'
-import { ProductType } from './types'
+import { ProductType, Stage, Status } from './types'
 
 function App() {
     const interviews = useMemo(
@@ -16,7 +16,9 @@ function App() {
             data.interviews.map(interview => ({
                 ...interview,
                 productType: interview.productType.map(pt => pt as ProductType),
-                status: interview.status as 'passed' | 'failed' | 'pending',
+                status: interview.status as Status,
+                stage: interview.stage as Stage,
+                companyId: Number.parseInt(interview.companyId),
             })),
         [],
     )
@@ -25,7 +27,10 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path='/' element={<Layout />}>
-                        <Route index element={<Dashboard />} />
+                        <Route
+                            index
+                            element={<Dashboard interviews={interviews} />}
+                        />
                         <Route
                             path='interviews'
                             element={<InterviewList interviews={interviews} />}

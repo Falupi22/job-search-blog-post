@@ -1,5 +1,4 @@
 export enum ProductType {
-    Enterprise = 'Enterprise',
     Cybersecurity = 'Cybersecurity',
     AI = 'AI',
     Virtualization = 'Virtualization',
@@ -13,16 +12,34 @@ export enum ProductType {
     Backoffice = 'Backoffice',
 }
 
+export enum Status {
+    Passed = 'passed',
+    Failed = 'failed',
+    Mismatch = 'mismatch',
+    Pending = 'pending',
+}
+
+export enum Stage {
+    Recruiter = 'Recruiter',
+    TeamMember = 'Team Member',
+    Technical = 'Technical',
+    HR = 'HR',
+    DepartmentLeader = 'Department Leader',
+    Assignment = 'Assignment',
+    Tests = 'Tests',
+}
+
 export interface Interview {
     id: string
+    companyId: number
     companyType: string
     productType: Array<ProductType>
     position: string
     date: string
-    stage: string
+    stage: Stage
     method: string
     notes: string
-    status: 'passed' | 'failed' | 'pending'
+    status: Status
     summary: string
     duration: number
     interviewer: string
@@ -51,7 +68,7 @@ export interface BlogPost {
 export interface JobSearchStats {
     totalApplications: number
     rejections: number
-    interviews: number
+    totalInterviews: number
     offers: number
     averageResponseTime: number
 }
