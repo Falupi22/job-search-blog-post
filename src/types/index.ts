@@ -1,12 +1,33 @@
+export enum ProductType {
+    Enterprise = 'Enterprise',
+    Cybersecurity = 'Cybersecurity',
+    AI = 'AI',
+    Virtualization = 'Virtualization',
+    Environmental = 'Environmental',
+    IT = 'IT',
+    Cloud = 'Cloud',
+    Communication = 'Communication',
+    Aviation = 'Aviation',
+    Encryption = 'Encryption',
+    Ecommerce = 'Ecommerce',
+    Backoffice = 'Backoffice',
+}
+
 export interface Interview {
     id: string
     companyType: string
-    productType: string
+    productType: Array<ProductType>
     position: string
     date: string
     stage: string
+    method: string
     notes: string
     status: 'passed' | 'failed' | 'pending'
+    summary: string
+    duration: number
+    interviewer: string
+    location: string
+    time: string
 }
 
 export interface Project {
