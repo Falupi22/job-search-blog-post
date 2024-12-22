@@ -2,10 +2,8 @@
     "general": {
         "totalApplications": 160,
         "rejections": 60,
-        "interestedCompanies": 10,
-        "totalInterviews": 20,
         "offers": 2,
-        "averageResponseTime": 14
+        "averageResponseTimeInDays": 2
     },
     "interviews": [
         {

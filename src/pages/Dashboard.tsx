@@ -18,11 +18,13 @@ export const Dashboard = ({ interviews }: DashboardProps) => {
         companiesPerProductType,
         interviewsPerLocation,
         interviewsPerCompanyType,
+        totalCompaniesInterested,
+        totalInterviews,
     } = useCalcStats(interviews)
 
     return (
         <Box>
-            <Typography variant='h4' gutterBottom>
+            <Typography variant='h4' gutterBottom mb={4}>
                 A Long, Challenging Journey
             </Typography>
 
@@ -34,9 +36,24 @@ export const Dashboard = ({ interviews }: DashboardProps) => {
                 and more candidates with their process.
             </Typography>
 
-            <StatsGrid stats={data.general} />
+            <Typography variant='h5' my={4} fontWeight='bold'>
+                As for now, I haven't found a job yet, but I keep gathering some
+                interesting stats!
+            </Typography>
+
+            <StatsGrid
+                stats={{
+                    totalApplications: data.general.totalApplications,
+                    rejections: data.general.rejections,
+                    totalCompaniesInterested,
+                    totalInterviews,
+                    offers: data.general.offers,
+                    averageResponseTimeInDays:
+                        data.general.averageResponseTimeInDays,
+                }}
+            />
             <Typography variant='h5' mt={4}>
-                Interviews Statistics
+                Interview Statistics
             </Typography>
 
             <Box width='100%' display='flex' justifyContent='center' mt={2}>
@@ -51,7 +68,7 @@ export const Dashboard = ({ interviews }: DashboardProps) => {
             </Box>
 
             <Typography variant='h5' mt={4}>
-                Companies Statistics
+                Company Statistics
             </Typography>
 
             <Box width='100%' display='flex' justifyContent='center' mt={4}>

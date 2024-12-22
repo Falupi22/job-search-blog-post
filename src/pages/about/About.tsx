@@ -53,6 +53,37 @@ const About: React.FC = () => {
                             process can be long and challenging, so I aimed to
                             provide useful knowledge and guidance to fellow
                             candidates.
+                            <br />
+                            <br />
+                            Every journey is different. Everyone starts from a
+                            different point. Making comparisons is natural, but
+                            don't underestimate or overestimate your own
+                            journey. Some people might get hired by the first
+                            company they encounter, while others might need to
+                            apply to hundreds of jobs. Still, it should be clear
+                            that getting hired in the Hi Tech job market is not
+                            easy at all for the most of us, and it requires a
+                            lot of effort, patience, and persistence.
+                            <br />
+                            <br />
+                            I started working on my job search process while on
+                            traffic, telling the recruiter I am about to go back
+                            home only in 2 months. This is not so appealing to a
+                            lot of companies, obviously, you can take the
+                            ongoing war into account, which is making a massive,
+                            negative impact on the local job market.
+                            <br />
+                            <br />
+                            <b>
+                                However, this kind of obstacles is not going to
+                                stop me! Neither you!
+                            </b>
+                            <br />
+                            <br />
+                            My journey is ongoing, and I am still looking for a
+                            job. However, I am excited to continue learning,
+                            growing, and maybe even inspiring others along the
+                            way.
                         </Typography>
 
                         <Typography variant='h6' gutterBottom sx={{ mt: 4 }}>

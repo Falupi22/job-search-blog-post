@@ -17,9 +17,9 @@ interface StatsChartProps {
 
 export const StatsChart: React.FC<StatsChartProps> = ({ stats, title }) => {
     const theme = useTheme()
-    console.table(stats)
+
     return (
-        <Card sx={{ width: '100%', height: '100%' }}>
+        <Card sx={{ width: '100%', height: '100%', padding: '10px' }}>
             <Box
                 width='100%'
                 height='400px'
@@ -29,7 +29,7 @@ export const StatsChart: React.FC<StatsChartProps> = ({ stats, title }) => {
             >
                 <Typography
                     variant='h6'
-                    sx={{ textAlign: 'center', marginTop: theme.spacing(2) }}
+                    sx={{ textAlign: 'center', margin: theme.spacing(2) }}
                 >
                     {title}
                 </Typography>
@@ -38,7 +38,19 @@ export const StatsChart: React.FC<StatsChartProps> = ({ stats, title }) => {
                         <CartesianGrid strokeDasharray='2 2' />
                         <XAxis dataKey='name' tick={{ fontSize: 12 }} />
                         <YAxis tick={{ fontSize: 15 }} />
-                        <Tooltip />
+                        <Tooltip
+                            contentStyle={{
+                                backgroundColor: theme.palette.background.paper,
+                                border: `1px solid ${theme.palette.divider}`,
+                                borderRadius: '10px',
+                            }}
+                            labelStyle={{ color: theme.palette.text.primary }}
+                            itemStyle={{ color: theme.palette.text.secondary }}
+                            formatter={(value: number, name: string) => [
+                                `${value}`,
+                                `${name}`,
+                            ]}
+                        />
                         <Bar
                             dataKey='value'
                             fill={theme.palette.primary.main}

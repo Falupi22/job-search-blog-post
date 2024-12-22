@@ -7,6 +7,8 @@ interface CalculatedStats {
     interviewsPerStatus: Array<{ name: string; value: number }>
     interviewsPerLocation: Array<{ name: string; value: number }>
     interviewsPerCompanyType: Array<{ name: string; value: number }>
+    totalCompaniesInterested: number
+    totalInterviews: number
 }
 
 const useCalcStats = (interviews: Array<Interview>): CalculatedStats => {
@@ -101,12 +103,19 @@ const useCalcStats = (interviews: Array<Interview>): CalculatedStats => {
                 ).length,
             }))
 
+        const totalCompaniesInterested = Math.max(
+            ...interviews.map(interview => interview.companyId),
+        )
+        const totalInterviews = interviews.length
+
         return {
+            totalInterviews,
             interviewsPerStage,
             companiesPerProductType,
             interviewsPerStatus,
             interviewsPerLocation,
             interviewsPerCompanyType,
+            totalCompaniesInterested,
         }
     }, [interviews])
 
