@@ -1,37 +1,25 @@
-import React from 'react'
 import { Box, Typography } from '@mui/material'
-import BlogPost from './BlogPost'
 import { BlogPost as BlogPostType } from '../../types'
+import BlogPost from './BlogPost'
 
-const mockPosts: BlogPostType[] = [
-    {
-        id: '1',
-        title: 'My Journey into Tech',
-        content:
-            "Three months ago, I decided to make a career transition into tech. Here's what I've learned so far...",
-        date: '2024-02-20',
-        tags: ['Career Change', 'Learning', 'Tech Journey'],
-    },
-    {
-        id: '2',
-        title: 'Mastering Technical Interviews',
-        content:
-            'After going through multiple technical interviews, here are my top tips for success...',
-        date: '2024-02-15',
-        tags: ['Interviews', 'Tips', 'Career'],
-    },
-]
+interface BlogProps {
+    blogPosts: Array<BlogPostType>
+}
 
-const Blog: React.FC = () => {
+const Blog = ({ blogPosts }: BlogProps) => {
     return (
-        <Box>
+        <Box display='flex' flexDirection='column'>
             <Typography variant='h4' gutterBottom>
                 Blog
             </Typography>
             <Typography variant='body1' paragraph>
-                Sharing my experiences and insights from my journey into tech.
+                Sharing my experiences and insights from my journey.
             </Typography>
-            {mockPosts.map(post => (
+            <Typography variant='body2' paragraph>
+                FYI: The dates represent the time the post discusses, not the
+                publish time.
+            </Typography>
+            {blogPosts.map(post => (
                 <BlogPost key={post.id} post={post} />
             ))}
         </Box>

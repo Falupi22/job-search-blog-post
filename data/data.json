@@ -399,5 +399,87 @@
             "githubUrl": "https://github.com/Falupi22/useful-chrome-extensions",
             "liveUrl": "https://portfolio.demo.com"
         }
+    ],
+    "blogsPosts": [
+        {
+            "id": "1",
+            "title": "A Different State Of Mind",
+            "imageSrc": "../public/images/panamaCity.jpg",
+            "imageAlt": "Panama City",
+            "imageDesc": "Panama City, the place I bought the laptop",
+            "content": "Three months ago, I decided to make a career transition into tech. Here's what I've learned so far...",
+            "date": "2024-6-10",
+            "tags": ["Career Change", "Learning", "Tech Journey"]
+        },
+        {
+            "id": "2",
+            "title": "Freelance Is Not For Everyone",
+            "imageSrc": "../public/images/elSalvador.png",
+            "imageAlt": "El Salvador",
+            "imageDesc": "Taken on the day I started my job search journey",
+            "content": "After going through multiple technical interviews, here are my top tips for success...",
+            "date": "2024-8-29",
+            "tags": ["Interviews", "Tips", "Career"]
+        },
+        {
+            "id": "3",
+            "title": "The Power Of Documentation",
+            "imageSrc": "../public/images/documentation.jpg",
+            "imageAlt": "Documentation",
+            "imageDesc": "Capture every detail, it might help you later",
+            "content": "Networking is a powerful tool that can help you land your dream job. Here's how...",
+            "date": "2024-8-9",
+            "tags": ["Networking", "Job Search", "Career"]
+        },
+        {
+            "id": "4",
+            "title": "The Moment I Almost Found a Job From 15,000 KM Away",
+            "imageSrc": "../public/images/almost.jpg",
+            "imageAlt": "Almost",
+            "imageDesc": "Almost is a concept you might face in your job search journey",
+            "content": "A portfolio is a great way to showcase your skills and experience. Here's why you need one...",
+            "date": "2024-10-1",
+            "tags": ["Portfolio", "Job Search", "Career"]
+        },
+        {
+            "id": "5",
+            "title": "Career Break Of The Career Break",
+            "imageSrc": "../public/images/airplane.jpg",
+            "imageAlt": "Airplane",
+            "imageDesc": "I am still travelling, right?",
+            "content": "Following up after an interview is a great way to show your interest in the position. Here's how...",
+            "date": "2024-10-10",
+            "tags": ["Interviews", "Tips", "Career"]
+        },
+        {
+            "id": "6",
+            "title": "Homecoming",
+            "imageSrc": "../public/images/home.jpg",
+            "imageAlt": "Home sweet home",
+            "imageDesc": "Great times, but that's it",
+            "content": "A good resume is essential for landing your dream job. Here's how to make yours stand out...",
+            "date": "2024-11-2",
+            "tags": ["Resume", "Job Search", "Career"]
+        },
+        {
+            "id": "7",
+            "title": "What If?",
+            "imageSrc": "../public/images/question.jpg",
+            "imageAlt": "Question",
+            "imageDesc": "I would never know.",
+            "content": "A cover letter is a great way to introduce yourself to potential employers. Here's how to write a good one...",
+            "date": "2024-12-20",
+            "tags": ["Cover Letter", "Job Search", "Career"]
+        },
+        {
+            "id": "8",
+            "title": "The Ball Is In Your Court",
+            "imageSrc": "../public/images/football.jpg",
+            "imageAlt": "Football",
+            "imageDesc": "My choice, my move",
+            "content": "A cover letter is a great way to introduce yourself to potential employers. Here's how to write a good one...",
+            "date": "2024-12-20",
+            "tags": ["Cover Letter", "Job Search", "Career"]
+        }
     ]
 }

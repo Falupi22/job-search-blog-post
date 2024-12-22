@@ -16,12 +16,12 @@ const Layout: React.FC = () => {
                     display: 'flex',
                     width: '100%',
                     flexDirection: 'column',
-                    minHeight: '100vh',
+                    flexGrow: 1,
                     justifyContent: 'center',
                 }}
             >
                 <Navigation />
-                <Container component='main' sx={{ flexGrow: 0, py: 4 }}>
+                <Container component='main' sx={{ py: 4 }}>
                     <Outlet />
                 </Container>
                 <ContactLinks />

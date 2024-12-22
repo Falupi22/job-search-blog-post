@@ -60,6 +60,9 @@ export interface Project {
 export interface BlogPost {
     id: string
     title: string
+    imageSrc: string
+    imageAlt: string
+    imageDesc: string
     content: string
     date: string
     tags: string[]

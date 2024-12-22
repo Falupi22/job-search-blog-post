@@ -1,7 +1,6 @@
 import React from 'react'
 import { Grid } from '@mui/material'
 import StatCard from './StatCard'
-import { JobSearchStats } from '../../types'
 
 interface StatsGridProps {
     stats: object

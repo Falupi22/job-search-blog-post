@@ -14,6 +14,12 @@ declare module '@mui/material/styles' {
     }
 }
 
+declare module '@mui/material/Paper' {
+    interface PaperPropsVariantOverrides {
+        selectable: true
+    }
+}
+
 export const getTheme = (mode: PaletteMode, direction: 'ltr' | 'rtl') => {
     const { palette } = createTheme()
     const theme = createTheme({
@@ -35,11 +41,18 @@ export const getTheme = (mode: PaletteMode, direction: 'ltr' | 'rtl') => {
         typography: {
             fontFamily: 'system-ui, -apple-system, sans-serif',
         },
+    })
+
+    const extendedTheme = createTheme(theme, {
         components: {
             MuiCard: {
+                defaultProps: {
+                    variant: 'elevation', // Set default variant type
+                },
                 styleOverrides: {
                     root: {
-                        borderRadius: 12,
+                        // Default styles for all Cards
+                        borderRadius: '12px',
                     },
                 },
             },
@@ -77,5 +90,5 @@ export const getTheme = (mode: PaletteMode, direction: 'ltr' | 'rtl') => {
         },
     })
 
-    return theme
+    return extendedTheme
 }
