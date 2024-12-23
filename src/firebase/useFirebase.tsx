@@ -10,13 +10,13 @@ import { getAnalytics } from 'firebase/analytics'
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-    authDomain: "job-search-blog-post.firebaseapp.com",
-    databaseURL: "https://job-search-blog-post-default-rtdb.europe-west1.firebasedatabase.app",
-    projectId: "job-search-blog-post",
-    storageBucket: "job-search-blog-post.firebasestorage.app",
-    messagingSenderId: "605608131962",
-    appId: "1:605608131962:web:c27f38756c7d55e9a3eac3",
-    measurementId: "G-ELPP2MTSRF"
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 }
 
 // Initialize Firebase
