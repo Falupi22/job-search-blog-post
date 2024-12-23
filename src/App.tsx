@@ -15,7 +15,7 @@ import localData from '../data/data.json'
 function App() {
     const { data, error } = useFirebase()
 
-    const rawData = error ? localData : data
+    const rawData = error ? localData : data;
 
     const memoData = useMemo(() => {
         return {
