@@ -41,7 +41,7 @@ function App() {
 
     const { interviews, blogPosts, projects, general, about } = memoData
 
-    return (
+    return (data &&
         <ThemeProvider>
             <BrowserRouter>
                 <Routes>

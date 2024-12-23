@@ -1,9 +1,10 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Fade, Typography } from '@mui/material'
 import StatsGrid from '../components/stats/StatsGrid'
 import StatsChart from '../components/stats/StatsChart'
 import { StatsPieChart } from '../components/stats/StatsPieChart'
 import useCalcStats from './useCalcStats'
 import { Interview } from '../types'
+import { useInView } from 'react-intersection-observer';
 
 interface DashboardProps {
     general: {
@@ -26,6 +27,10 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
         totalInterviews,
     } = useCalcStats(interviews)
 
+    const { ref: generalStatsRef, inView: generalStatsInView } = useInView({ triggerOnce: true });
+    const { ref: interviewLabelRef, inView: interviewLabelInView } = useInView({ triggerOnce: true });
+    const { ref: companiesLabelRef, inView: companiesLabelInView } = useInView({ triggerOnce: true });
+
     return (
         <Box>
             <Typography variant='h4' gutterBottom mb={4}>
@@ -40,27 +45,40 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                 and more candidates with their process.
             </Typography>
 
-            <Typography variant='h5' my={4} fontWeight='bold'>
+            <Typography variant='h5' my={4} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
                 As for now, I haven't found a job yet, but I keep gathering some
                 interesting stats!
             </Typography>
 
-            <StatsGrid
-                stats={{
-                    totalApplications: general?.totalApplications ?? 0,
-                    rejections: general?.rejections ?? 0,
-                    totalCompaniesInterested,
-                    totalInterviews,
-                    offers: general?.offers ?? 0,
-                    averageResponseTimeInDays:
-                        general?.averageResponseTimeInDays ?? 0,
-                }}
-            />
-            <Typography variant='h5' mt={4}>
-                Interview Statistics
-            </Typography>
+            <Box ref={generalStatsRef} style={{ transformOrigin: '0 0 0' }}>
+                <Fade in={generalStatsInView} timeout={1000}>
+                    <Box>
+                        <StatsGrid 
+                            stats={{
+                                totalApplications: general?.totalApplications ?? 0,
+                                rejections: general?.rejections ?? 0,
+                                totalCompaniesInterested,
+                                totalInterviews,
+                                offers: general?.offers ?? 0,
+                                averageResponseTimeInDays:
+                                    general?.averageResponseTimeInDays ?? 0,
+                            }}
+                        />
+                    </Box>
+                </Fade>
+            </Box>
 
-            <Box width='100%' display='flex' justifyContent='center' mt={2}>
+            <Box ref={interviewLabelRef}>
+            <Fade in={interviewLabelInView} timeout={1000}>
+                <Box>
+                    <Typography variant='h5' mt={10} alignContent='center' textAlign='center'>
+                        Interviews are the main challenge of the search
+                    </Typography>
+                    <Typography variant='h6' mt={2} height='5vh' alignContent='center' textAlign='center' >
+                        Every company has its own process, but most of them share similar stages.
+                    </Typography>
+
+            <Box width='100%' display='flex' justifyContent='center' mt={10}>
                 <StatsPieChart
                     stats={interviewsPerStage}
                     title='Interviews Per Stage'
@@ -69,13 +87,22 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                     stats={interviewsPerStatus}
                     title='Interviews Per Status'
                 />
+                </Box>
+                </Box>
+                </Fade>
             </Box>
-
-            <Typography variant='h5' mt={4}>
-                Company Statistics
+           
+            <Box ref={companiesLabelRef}>
+            <Fade in={companiesLabelInView} timeout={1000}>
+                <Box>
+            <Typography variant='h5' mt={10} alignContent='center' textAlign='center'>
+                There are many companies interested in hiring, from different fields
+            </Typography>
+            <Typography variant='h6' mt={2} height='5vh' alignContent='center' textAlign='center' >
+                However, there are some clear trends in the market.
             </Typography>
 
-            <Box width='100%' display='flex' justifyContent='center' mt={4}>
+            <Box width='100%' display='flex' justifyContent='center' mt={10}>
                 <StatsChart
                     stats={companiesPerProductType}
                     title='Companies By Product (Some companies match more than one field)'
@@ -92,6 +119,9 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                     stats={interviewsPerCompanyType}
                     title='Companies By Type'
                 />
+            </Box>
+            </Box>
+            </Fade>
             </Box>
         </Box>
     )
