@@ -8,7 +8,7 @@ export const Navigation: React.FC = () => {
         <AppBar position='static' sx={{ mt: 0, mb: 'auto' }}>
             <Toolbar>
                 <Typography variant='h6' component='div' sx={{ flexGrow: 1 }}>
-                    My Job Search Tracker
+                    Job Search Blog
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 2 }}>
                     <NavigationLinks />
