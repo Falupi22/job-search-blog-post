@@ -99,46 +99,48 @@ export const StatsPieChart = ({ stats, title }: StatsPieChartProps) => {
     return (
         <Card
             sx={{
-                width: '100%',
-                height: '100%',
-                padding: '10px',
-                margin: '10px',
+            width: '100%',
+            height: '100%',
+            maxWidth: '500px',
+            padding: '10px',
+            paddingBottom: '15px',
+            margin: '10px',
             }}
         >
             <Box
-                width='100%'
-                height='400px'
-                display='flex'
-                justifyContent='center'
-                flexDirection='column'
+            width='100%'
+            height={{ xs: '350px', sm: '450px' }}
+            display='flex'
+            justifyContent='center'
+            flexDirection='column'
             >
-                <Typography
-                    variant='h6'
-                    sx={{ textAlign: 'center', marginTop: theme.spacing(2) }}
-                >
-                    {title}
-                </Typography>
-                <ResponsiveContainer width='100%' height='100%'>
-                    <PieChart>
-                        <Pie
-                            activeIndex={activeIndex}
-                            activeShape={props =>
-                                renderActiveShape(
-                                    props,
-                                    theme.palette.idle.main,
-                                )
-                            }
-                            data={stats}
-                            cx='50%'
-                            cy='50%'
-                            innerRadius='40%'
-                            outerRadius='70%'
-                            fill={theme.palette.primary.main}
-                            dataKey='value'
-                            onMouseEnter={onPieEnter}
-                        />
-                    </PieChart>
-                </ResponsiveContainer>
+            <Typography
+                variant='h6'
+                sx={{ textAlign: 'center', marginTop: theme.spacing(2) }}
+            >
+                {title}
+            </Typography>
+            <ResponsiveContainer width='100%' height='100%'>
+                <PieChart>
+                <Pie
+                    activeIndex={activeIndex}
+                    activeShape={props =>
+                    renderActiveShape(
+                        props,
+                        theme.palette.idle.main,
+                    )
+                    }
+                    data={stats}
+                    cx='50%'
+                    cy='50%'
+                    innerRadius='40%'
+                    outerRadius='70%'
+                    fill={theme.palette.primary.main}
+                    dataKey='value'
+                    onMouseEnter={onPieEnter}
+                />
+                </PieChart>
+            </ResponsiveContainer>
             </Box>
         </Card>
     )

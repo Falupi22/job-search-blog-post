@@ -18,6 +18,16 @@ const Layout: React.FC = () => {
                     flexDirection: 'column',
                     flexGrow: 1,
                     justifyContent: 'center',
+                    minHeight: '100vh',
+                    '@media (max-width: 600px)': {
+                        justifyContent: 'flex-start',
+                    },
+                    '@media (min-width: 600px) and (max-width: 960px)': {
+                        justifyContent: 'center',
+                    },
+                    '@media (min-width: 960px)': {
+                        justifyContent: 'center',
+                    },
                 }}
             >
                 <Navigation />

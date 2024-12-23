@@ -1,11 +1,11 @@
 import React from 'react'
-import { Button } from '@mui/material'
+import { Box, Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { navigationLinks } from '../../config/navigation'
 
 export const NavigationLinks: React.FC = () => {
     return (
-        <>
+        <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
             {navigationLinks.map(link => (
                 <Button
                     key={link.path}
@@ -16,7 +16,7 @@ export const NavigationLinks: React.FC = () => {
                     {link.label}
                 </Button>
             ))}
-        </>
+        </Box>
     )
 }
 

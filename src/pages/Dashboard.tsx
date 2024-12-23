@@ -78,7 +78,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                         Every company has its own process, but most of them share similar stages.
                     </Typography>
 
-            <Box width='100%' display='flex' justifyContent='center' mt={10}>
+            <Box width='100%' display='flex' flexWrap='wrap' justifyContent='center' mt={10}>
                 <StatsPieChart
                     stats={interviewsPerStage}
                     title='Interviews Per Stage'
