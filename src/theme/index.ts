@@ -32,11 +32,15 @@ export const getTheme = (mode: PaletteMode, direction: 'ltr' | 'rtl') => {
                 },
             }),
             primary: {
-                main: '#2196f3',
+                main: '#2196f3'
             },
             secondary: {
                 main: '#f50057',
             },
+            text: {
+                primary: mode === 'light' ? '#000' : '#fff',
+                secondary: mode === 'light' ? '#333' : '#ccc',
+            }
         },
         typography: {
             fontFamily: 'system-ui, -apple-system, sans-serif',

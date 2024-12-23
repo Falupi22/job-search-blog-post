@@ -6,7 +6,6 @@ import {
     Typography,
     Chip,
     Box,
-    Link,
     CardActions,
     Button,
 } from '@mui/material'
@@ -51,7 +50,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
                 {project.liveUrl && (
                     <Button
                         startIcon={<Globe size={18} />}
-                        href={project.liveUrl}
+                        href={project?.liveUrl}
                         target='_blank'
                         size='small'
                     >

@@ -7,25 +7,39 @@ import InterviewList from './pages/interviews/InterviewList'
 import Portfolio from './pages/portfolio/Portfolio'
 import Blog from './pages/blog/Blog'
 import About from './pages/about/About'
-import data from '../data/data.json'
 import { ProductType, Stage, Status } from './types'
 import BlogPageProvider from './pages/blog/BlogPageProvider'
+import useFirebase from './firebase/useFirebase'
+import localData from '../data/data.json'
 
 function App() {
+    const { data, error } = useFirebase()
+
+    const rawData = error ? localData : data
+
     const memoData = useMemo(() => {
         return {
-            interviews: data.interviews.map(interview => ({
+            interviews: rawData?.interviews?.map(interview => ({
                 ...interview,
                 productType: interview.productType.map(pt => pt as ProductType),
                 status: interview.status as Status,
                 stage: interview.stage as Stage,
                 companyId: Number.parseInt(interview.companyId),
             })),
-            blogPosts: data.blogsPosts.slice().reverse(),
+            blogPosts: rawData?.blogsPosts?.slice().reverse(),
+            projects: rawData?.projects,
+            general: rawData?.general,
+            about: rawData?.about,
         }
-    }, [])
+    }, [
+        rawData?.about,
+        rawData?.blogsPosts,
+        rawData?.general,
+        rawData?.interviews,
+        rawData?.projects,
+    ])
 
-    const { interviews, blogPosts } = memoData
+    const { interviews, blogPosts, projects, general, about } = memoData
 
     return (
         <ThemeProvider>
@@ -34,13 +48,21 @@ function App() {
                     <Route path='/' element={<Layout />}>
                         <Route
                             index
-                            element={<Dashboard interviews={interviews} />}
+                            element={
+                                <Dashboard
+                                    interviews={interviews}
+                                    general={general}
+                                />
+                            }
                         />
                         <Route
                             path='interviews'
                             element={<InterviewList interviews={interviews} />}
                         />
-                        <Route path='portfolio' element={<Portfolio />} />
+                        <Route
+                            path='portfolio'
+                            element={<Portfolio projects={projects} />}
+                        />
                         <Route
                             path='blog'
                             element={<Blog blogPosts={blogPosts} />}
@@ -48,10 +70,19 @@ function App() {
                         <Route
                             path='blog/:id'
                             element={
-                                <BlogPageProvider blogs={blogPosts.slice()} />
+                                <BlogPageProvider blogs={blogPosts?.slice()} />
                             }
                         />
-                        <Route path='about' element={<About />} />
+                        <Route
+                            path='about'
+                            element={
+                                <About
+                                    name={about?.name}
+                                    caption={about?.caption}
+                                    body={about?.body}
+                                />
+                            }
+                        />
                     </Route>
                 </Routes>
             </BrowserRouter>

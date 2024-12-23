@@ -67,7 +67,7 @@ const InterviewList = ({ interviews }: InterviewListProps) => {
                     </TableHead>
                     <TableBody>
                         {interviews
-                            .map(interview => (
+                            ?.map(interview => (
                                 <TableRow
                                     key={interview.id}
                                     style={{

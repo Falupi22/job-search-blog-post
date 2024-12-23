@@ -1,17 +1,21 @@
-import React from 'react'
 import { Box, Typography } from '@mui/material'
 import StatsGrid from '../components/stats/StatsGrid'
 import StatsChart from '../components/stats/StatsChart'
-import data from '../../data/data.json'
 import { StatsPieChart } from '../components/stats/StatsPieChart'
 import useCalcStats from './useCalcStats'
 import { Interview } from '../types'
 
 interface DashboardProps {
+    general: {
+        totalApplications: number
+        rejections: number
+        offers: number
+        averageResponseTimeInDays: number
+    }
     interviews: Array<Interview>
 }
 
-export const Dashboard = ({ interviews }: DashboardProps) => {
+export const Dashboard = ({ interviews, general }: DashboardProps) => {
     const {
         interviewsPerStage,
         interviewsPerStatus,
@@ -43,13 +47,13 @@ export const Dashboard = ({ interviews }: DashboardProps) => {
 
             <StatsGrid
                 stats={{
-                    totalApplications: data.general.totalApplications,
-                    rejections: data.general.rejections,
+                    totalApplications: general?.totalApplications ?? 0,
+                    rejections: general?.rejections ?? 0,
                     totalCompaniesInterested,
                     totalInterviews,
-                    offers: data.general.offers,
+                    offers: general?.offers ?? 0,
                     averageResponseTimeInDays:
-                        data.general.averageResponseTimeInDays,
+                        general?.averageResponseTimeInDays ?? 0,
                 }}
             />
             <Typography variant='h5' mt={4}>

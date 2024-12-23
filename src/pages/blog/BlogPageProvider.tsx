@@ -15,7 +15,7 @@ const BlogPageProvider: React.FC<BlogPageProviderProps> = ({
     const [blog, setBlog] = useState<BlogPost | null>(null)
 
     useEffect(() => {
-        const blogData = blogs.find((blog: BlogPost) => blog.id === id)
+        const blogData = blogs?.find((blog: BlogPost) => blog.id === id)
         if (blogData) {
             setBlog(blogData)
         }

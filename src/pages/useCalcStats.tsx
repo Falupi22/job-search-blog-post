@@ -13,25 +13,25 @@ interface CalculatedStats {
 
 const useCalcStats = (interviews: Array<Interview>): CalculatedStats => {
     const stats = useMemo(() => {
-        const mismatchStage = interviews.filter(
+        const mismatchStage = interviews?.filter(
             interview => interview.status === Status.Mismatch,
         ).length
-        const teamStage = interviews.filter(
+        const teamStage = interviews?.filter(
             interview => interview.stage === Stage.TeamMember,
         ).length
-        const technicalStage = interviews.filter(
+        const technicalStage = interviews?.filter(
             interview => interview.stage === Stage.Technical,
         ).length
-        const hrStage = interviews.filter(
+        const hrStage = interviews?.filter(
             interview => interview.stage === Stage.HR,
         ).length
-        const departmentStage = interviews.filter(
+        const departmentStage = interviews?.filter(
             interview => interview.stage === Stage.DepartmentLeader,
         ).length
-        const assignmentStage = interviews.filter(
+        const assignmentStage = interviews?.filter(
             interview => interview.stage === Stage.Assignment,
         ).length
-        const testsStage = interviews.filter(
+        const testsStage = interviews?.filter(
             interview => interview.stage === Stage.Tests,
         ).length
 
@@ -49,10 +49,10 @@ const useCalcStats = (interviews: Array<Interview>): CalculatedStats => {
             Object.values(ProductType).map(productType => {
                 const uniqueCompanies = new Set(
                     interviews
-                        .filter(interview =>
+                        ?.filter(interview =>
                             interview.productType.includes(productType),
                         )
-                        .map(interview => interview.companyId),
+                        ?.map(interview => interview.companyId),
                 )
 
                 return {
@@ -63,8 +63,8 @@ const useCalcStats = (interviews: Array<Interview>): CalculatedStats => {
 
         const interviewsPerLocation: Array<{ name: string; value: number }> =
             Array.from(
-                new Set(interviews.map(interview => interview.location)),
-            ).map(location => {
+                new Set(interviews?.map(interview => interview.location)),
+            )?.map(location => {
                 const uniqueCompanies = new Set(
                     interviews
                         .filter(interview => interview.location === location)
@@ -79,11 +79,11 @@ const useCalcStats = (interviews: Array<Interview>): CalculatedStats => {
 
         const interviewsPerCompanyType: Array<{ name: string; value: number }> =
             Array.from(
-                new Set(interviews.map(interview => interview.companyType)),
+                new Set(interviews?.map(interview => interview.companyType)),
             ).map(companyType => {
                 const uniqueCompanies = new Set(
                     interviews
-                        .filter(
+                        ?.filter(
                             interview => interview.companyType === companyType,
                         )
                         .map(interview => interview.companyId),
@@ -98,15 +98,15 @@ const useCalcStats = (interviews: Array<Interview>): CalculatedStats => {
         const interviewsPerStatus: Array<{ name: string; value: number }> =
             Object.values(Status).map(status => ({
                 name: status,
-                value: interviews.filter(
-                    interview => interview.status === status,
-                ).length,
+                value:
+                    interviews?.filter(interview => interview.status === status)
+                        ?.length ?? 0,
             }))
 
         const totalCompaniesInterested = Math.max(
-            ...interviews.map(interview => interview.companyId),
+            ...(interviews?.map(interview => interview.companyId) ?? []),
         )
-        const totalInterviews = interviews.length
+        const totalInterviews = interviews?.length ?? 0
 
         return {
             totalInterviews,
