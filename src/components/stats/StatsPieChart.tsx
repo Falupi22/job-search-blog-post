@@ -62,29 +62,51 @@ const renderActiveShape = (props: any, textColor: string) => {
                 outerRadius={outerRadius + 10}
                 fill={fill}
             />
-            <path
-                d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
+            {window.innerWidth <= 600 ? (
+                <>
+                    <text
+                        x={cx}
+                        y={cy + outerRadius + 30}
+                        textAnchor='middle'
+                        fill={textColor}
+                        style={{ fontWeight: 'bold' }}
+                    >{`${value}`}</text>
+                    <text
+                        x={cx}
+                        y={cy + outerRadius + 50}
+                        textAnchor='middle'
+                        fill={textColor}
+                        style={{ fontSize: 'calc(8px + 0.5vw)', marginBottom: '10px' }}
+                    >
+                        {`(${(percent * 100).toFixed(2)}%)`}
+                    </text>
+                </>
+            ) : (
+                <>
+                <path d={`M${sx},${sy}L${mx},${my}L${ex},${ey}`}
                 stroke={fill}
                 fill='none'
             />
             <circle cx={ex} cy={ey} r={2} fill={fill} stroke='none' />
-            <text
-                x={ex + (cos >= 0 ? 1 : -1) * 12}
-                y={ey}
-                textAnchor={textAnchor}
-                fill={textColor}
-                style={{ fontWeight: 'bold' }}
-            >{`${value}`}</text>
-            <text
-                x={ex + (cos >= 0 ? 1 : -1) * 12}
-                y={ey}
-                dy={18}
-                textAnchor={textAnchor}
-                fill={textColor}
-                style={{ fontSize: 'calc(8px + 0.5vw)' }}
-            >
-                {`(Rate ${(percent * 100).toFixed(2)}%)`}
-            </text>
+                    <text
+                        x={ex + (cos >= 0 ? 1 : -1) * 12}
+                        y={ey}
+                        textAnchor={textAnchor}
+                        fill={textColor}
+                        style={{ fontWeight: 'bold' }}
+                    >{`${value}`}</text>
+                    <text
+                        x={ex + (cos >= 0 ? 1 : -1) * 12}
+                        y={ey}
+                        dy={18}
+                        textAnchor={textAnchor}
+                        fill={textColor}
+                        style={{ fontSize: 'calc(8px + 0.5vw)' }}
+                    >
+                        {`(${(percent * 100).toFixed(2)}%)`}
+                    </text>
+                </>
+            )}
         </g>
     )
 }
@@ -102,9 +124,9 @@ export const StatsPieChart = ({ stats, title }: StatsPieChartProps) => {
             sx={{
             width: '100%',
             height: '100%',
-            maxWidth: '500px',
+            maxWidth: '550px',
             padding: '10px',
-            paddingBottom: '15px',
+            paddingBottom: '20px',
             margin: '10px',
             }}
         >
@@ -142,7 +164,6 @@ export const StatsPieChart = ({ stats, title }: StatsPieChartProps) => {
                 />
                 </PieChart>
             </ResponsiveContainer>
-            </Box>
-        </Card>
-    )
+</Box>
+            </Card>)
 }

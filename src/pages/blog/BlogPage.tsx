@@ -29,7 +29,7 @@ const BlogPage = ({ post, lastPostId }: BlogPageProps) => {
                     border={1}
                     borderColor={theme.palette.idle.main}
                     overflow='hidden'
-                    width='50%'
+                    width={{ xs: '100%', sm: '50%' }}
                 >
                     <img
                         src={post.imageSrc}
