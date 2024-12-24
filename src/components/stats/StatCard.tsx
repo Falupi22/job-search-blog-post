@@ -1,10 +1,9 @@
 import React from 'react'
-import { Card, CardContent, Typography, LinearProgress } from '@mui/material'
+import { Card, CardContent, Typography } from '@mui/material'
 
 interface StatCardProps {
     label: string
     value: number
-    total: number
 }
 
 export const StatCard: React.FC<StatCardProps> = ({ label, value }) => {

@@ -73,13 +73,14 @@ const renderActiveShape = (props: any, textColor: string) => {
                 y={ey}
                 textAnchor={textAnchor}
                 fill={textColor}
+                style={{ fontWeight: 'bold' }}
             >{`${value}`}</text>
             <text
                 x={ex + (cos >= 0 ? 1 : -1) * 12}
                 y={ey}
                 dy={18}
                 textAnchor={textAnchor}
-                fill='#999'
+                fill={textColor}
                 style={{ fontSize: 'calc(8px + 0.5vw)' }}
             >
                 {`(Rate ${(percent * 100).toFixed(2)}%)`}
@@ -91,7 +92,7 @@ const renderActiveShape = (props: any, textColor: string) => {
 export const StatsPieChart = ({ stats, title }: StatsPieChartProps) => {
     const [activeIndex, setActiveIndex] = useState(0)
 
-    const onPieEnter = (_data: any, index: number, _e: React.MouseEvent) => {
+    const onPieEnter = (_data: any, index: number, _e: any) => {
         setActiveIndex(index)
     }
 
@@ -124,7 +125,7 @@ export const StatsPieChart = ({ stats, title }: StatsPieChartProps) => {
                 <PieChart>
                 <Pie
                     activeIndex={activeIndex}
-                    activeShape={props =>
+                    activeShape={(props: any) =>
                     renderActiveShape(
                         props,
                         theme.palette.idle.main,

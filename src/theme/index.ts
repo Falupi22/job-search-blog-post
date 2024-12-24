@@ -20,10 +20,9 @@ declare module '@mui/material/Paper' {
     }
 }
 
-export const getTheme = (mode: PaletteMode, direction: 'ltr' | 'rtl') => {
+export const getTheme = (mode: PaletteMode) => {
     const { palette } = createTheme()
     const theme = createTheme({
-        direction,
         palette: {
             mode,
             idle: palette.augmentColor({
@@ -32,7 +31,7 @@ export const getTheme = (mode: PaletteMode, direction: 'ltr' | 'rtl') => {
                 },
             }),
             primary: {
-                main: '#2196f3'
+                main: '#0057b5'
             },
             secondary: {
                 main: '#f50057',

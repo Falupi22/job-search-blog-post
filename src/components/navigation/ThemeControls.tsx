@@ -1,18 +1,19 @@
-import React from 'react'
 import { IconButton } from '@mui/material'
 import { Sun, Moon } from 'lucide-react'
 import { useThemeContext } from '../../context/ThemeContext'
 
-export const ThemeControls: React.FC = () => {
+const iconStyle = {
+    size: 20
+}
+
+export const ThemeControls = () => {
     const { toggleMode, mode } = useThemeContext()
 
-    return (
-        <>
+    return (<>
             <IconButton color='inherit' onClick={toggleMode}>
-                {mode === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-            </IconButton>
-        </>
-    )
+                {mode === 'dark' ? <Sun {...iconStyle} /> : <Moon {...iconStyle}/>}
+                </IconButton>
+        </>)
 }
 
 export default ThemeControls

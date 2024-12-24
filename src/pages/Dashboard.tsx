@@ -45,7 +45,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                 and more candidates with their process.
             </Typography>
 
-            <Typography variant='h5' my={4} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
+            <Typography variant='h5' mb={4} mt={3} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
                 As for now, I haven't found a job yet, but I keep gathering some
                 interesting stats!
             </Typography>

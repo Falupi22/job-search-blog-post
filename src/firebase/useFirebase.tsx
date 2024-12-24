@@ -1,12 +1,6 @@
 import { useState, useEffect } from 'react'
 import { FirebaseApp, initializeApp } from 'firebase/app'
 import { DataSnapshot, getDatabase, onValue, ref } from 'firebase/database'
-import { getAnalytics } from 'firebase/analytics'
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
 
 const firebaseConfig = {
     apiKey: import.meta.env.VITE_API_KEY,
@@ -21,7 +15,6 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app: FirebaseApp = initializeApp(firebaseConfig)
-const analytics = getAnalytics(app)
 
 const useFirebase = () => {
     const [data, setData] = useState<any>(null)

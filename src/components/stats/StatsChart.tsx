@@ -1,4 +1,3 @@
-import React from 'react'
 import { Box, Card, Typography, useTheme } from '@mui/material'
 import {
     BarChart,
@@ -15,7 +14,7 @@ interface StatsChartProps {
     title: string
 }
 
-export const StatsChart: React.FC<StatsChartProps> = ({ stats, title }) => {
+export const StatsChart = ({ stats, title }: StatsChartProps) => {
     const theme = useTheme()
 
     return (
@@ -29,15 +28,15 @@ export const StatsChart: React.FC<StatsChartProps> = ({ stats, title }) => {
             >
                 <Typography
                     variant='h6'
-                    sx={{ textAlign: 'center', margin: theme.spacing(2) }}
+                    sx={{ textAlign: 'center', margin: 2 }}
                 >
                     {title}
                 </Typography>
                 <ResponsiveContainer width='100%' height='100%'>
                     <BarChart data={stats} barCategoryGap='10%'>
                         <CartesianGrid strokeDasharray='2 2' />
-                        <XAxis dataKey='name' tick={{ fontSize: 12 }} />
-                        <YAxis tick={{ fontSize: 15 }} />
+                        <XAxis dataKey='name' tick={{ fontSize: 'small' }} />
+                        <YAxis tick={{ fontSize: 'medium' }} />
                         <Tooltip
                             contentStyle={{
                                 backgroundColor: theme.palette.background.paper,

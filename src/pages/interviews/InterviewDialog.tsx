@@ -12,6 +12,7 @@ import { Box } from '@mui/material'
 import { IconWithToolTip } from '../../icons/Icons'
 import { Interview } from '../../types'
 import { getStatusColor } from './StatusColor'
+import { DATE_FORMAT } from "../../global/formats"
 
 interface InterviewDialogProps {
     interview: Interview | null
@@ -81,7 +82,7 @@ export const InterviewDialog = ({
                         </Box>
                         <DialogContentText>
                             <strong>Date:</strong>{' '}
-                            {dayjs(date).format('DD/MM/YYYY')}
+                            {dayjs(date).format(DATE_FORMAT)}
                         </DialogContentText>
                         <DialogContentText>
                             <strong>Company Type:</strong> {companyType}

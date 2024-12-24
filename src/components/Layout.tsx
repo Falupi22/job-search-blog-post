@@ -1,11 +1,10 @@
-import React from 'react'
 import { Box, Container, CssBaseline, ThemeProvider } from '@mui/material'
 import { Outlet } from 'react-router-dom'
 import Navigation from './Navigation'
 import { useThemeContext } from '../context/ThemeContext'
 import ContactLinks from './navigation/ContactLinks'
 
-const Layout: React.FC = () => {
+const Layout = () => {
     const { theme } = useThemeContext()
 
     return (

@@ -21,13 +21,6 @@ const CybersecurityTooltip = () => (
 const AITooltip = () => (
     <TooltipWrapper title='AI' src='/icons/ai.svg' alt='AI' />
 )
-const EnterpriseTooltip = () => (
-    <TooltipWrapper
-        title='Enterprise'
-        src='/icons/enterprise.svg'
-        alt='Enterprise'
-    />
-)
 const VirtualizationTooltip = () => (
     <TooltipWrapper
         title='Virtualization'
@@ -75,7 +68,6 @@ const Icons: Record<ProductType, React.FC> = {
     [ProductType.Aviation]: AviationTooltip,
     [ProductType.Cybersecurity]: CybersecurityTooltip,
     [ProductType.AI]: AITooltip,
-    [ProductType.Enterprise]: EnterpriseTooltip,
     [ProductType.Virtualization]: VirtualizationTooltip,
     [ProductType.Environmental]: EnvironmentalTooltip,
     [ProductType.IT]: ITTooltip,
