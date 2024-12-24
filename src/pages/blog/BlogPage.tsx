@@ -49,9 +49,7 @@ const BlogPage = ({ post, lastPostId }: BlogPageProps) => {
                 >
                     {post.imageDesc}
                 </Typography>
-                <Typography variant='body1' paragraph>
-                    {post.content}
-                </Typography>
+                <Typography mt={4} dangerouslySetInnerHTML={{ __html: post.content}} variant='body1' paragraph />
                 <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                     {post.tags.map(tag => (
                         <Chip key={tag} label={tag} size='small' />

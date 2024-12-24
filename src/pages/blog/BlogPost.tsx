@@ -11,6 +11,7 @@ import { BlogPost as BlogPostType } from '../../types'
 import dayjs from 'dayjs'
 import { DATE_FORMAT } from '../../global/formats'
 import { Link } from 'react-router-dom'
+import { truncateContent } from "../../utils/strings"
 
 interface BlogPostProps {
     post: BlogPostType
@@ -42,7 +43,7 @@ const BlogPost: React.FC<BlogPostProps> = ({ post }) => {
                     {dayjs(post.date).format(DATE_FORMAT)}
                 </Typography>
                 <Typography variant='body1' paragraph>
-                    {post.content}
+                    {truncateContent(post.content)}
                 </Typography>
                 <Box sx={{ display: 'flex', gap: 1, flexWrap: 'wrap' }}>
                     {post.tags.map(tag => (
