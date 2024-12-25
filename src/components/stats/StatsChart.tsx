@@ -18,7 +18,7 @@ export const StatsChart = ({ stats, title }: StatsChartProps) => {
     const theme = useTheme()
 
     return (
-        <Card sx={{ width: '100%', height: '100%', padding: '10px' }}>
+        <Card sx={{ width: '100%', height: '100%', padding: '10px'}}>
             <Box
                 width='100%'
                 height='400px'
@@ -33,7 +33,7 @@ export const StatsChart = ({ stats, title }: StatsChartProps) => {
                     {title}
                 </Typography>
                 <ResponsiveContainer width='100%' height='100%'>
-                    <BarChart data={stats} barCategoryGap='10%'>
+                    <BarChart data={stats} barCategoryGap='10%' margin={{ top: 0, right: 10, left: -30, bottom: 0 }}>
                         <CartesianGrid strokeDasharray='2 2' />
                         <XAxis dataKey='name' tick={{ fontSize: 'small' }} />
                         <YAxis tick={{ fontSize: 'medium' }} />
