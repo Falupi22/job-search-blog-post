@@ -114,7 +114,7 @@ export const InterviewDialog = ({
                             <strong>Interviewer:</strong> {interviewer}
                         </DialogContentText>
                         <DialogContentText>
-                            <strong>Summary:</strong> <Typography component="p" dangerouslySetInnerHTML={{ __html: summary }} variant='body1'/>
+                            <strong>Summary:</strong> <Typography component="p" dangerouslySetInnerHTML={{ __html: summary ?? '' }} variant='body1'/>
                         </DialogContentText>
                     </Box>
                 )}
