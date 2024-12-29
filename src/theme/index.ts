@@ -42,7 +42,7 @@ export const getTheme = (mode: PaletteMode) => {
             }
         },
         typography: {
-            fontFamily: 'system-ui, -apple-system, sans-serif',
+            fontFamily: '"Outfit", -apple-system, sans-serif',
         },
     })
 

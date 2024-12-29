@@ -45,10 +45,7 @@ export const StatsChart = ({ stats, title }: StatsChartProps) => {
                             }}
                             labelStyle={{ color: theme.palette.text.primary }}
                             itemStyle={{ color: theme.palette.text.secondary }}
-                            formatter={(value: number, name: string) => [
-                                `${value}`,
-                                `${name}`,
-                            ]}
+                            formatter={(value: number) => [`${value}`]}
                         />
                         <Bar
                             dataKey='value'
