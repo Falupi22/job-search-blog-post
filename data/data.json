@@ -1,490 +1,737 @@
 {
+    "about": {
+      "body": "## My Story\nHello everyone! I am Tal, a 23-year-old software engineer from Israel with a deep passion for technology and software development.\nAfter completing my military service as a full stack engineer, a temporary contract at a startup, and reserve duty, I decided to take a career break and travel through South America. During my travels, I decided to start job hunting. I purchased a laptop, worked on small projects, and began sending out resumes.\n\nTo make the most of this journey, I decided to track and document my job search process. This helped me monitor my progress, identify areas for improvement, and gather valuable insights. Additionally, I wanted to share my experience to help others navigate their own job search journeys. I realized that this process can be long and challenging, so I aimed to provide useful knowledge and guidance to fellow candidates.\n\nEvery journey is different. Everyone starts from a different point. Making comparisons is natural, but don't underestimate or overestimate your own journey. Some people might get hired by the first company they encounter, while others might need to apply to hundreds of jobs. Still, it should be clear that getting hired in the Hi Tech job market is not easy at all for most of us, and it requires a lot of effort, patience, and persistence.\n\nI started working on my job search process while traveling, telling recruiters I would only return home in two months. This isn’t so appealing to many companies. Additionally, the ongoing war has had a massive negative impact on the local job market.\n\n**However, these kinds of obstacles will not stop me! Neither should they stop you!** \n\nMy journey is ongoing, and I am still looking for a job. However, I am excited to continue learning, growing, and maybe even inspiring others along the way.\n\n---\n\n### Skills\n- **Frontend**: React, TypeScript, HTML5, CSS3, WPF, Chakra UI \n- **Backend**: C# .NET Core, Python, Node.js, REST APIs  \n- **Databases**: MongoDB, MSSQL, Redis  \n- **Tools**: Git, Consul, Openshift, Wireshark, Visio  \n- **Soft Skills**: Problem Solving, Team Collaboration, Autodidact  \n\n---\n\n### Goals\n\nMy goal is to join a company where I can contribute to meaningful projects while continuing to learn and grow as a developer. I'm particularly interested in full stack or backend development and creating efficient and reliable systems.",
+      "caption": "Aspiring Software Developer",
+      "name": "Tal Frumkin"
+    },
+    "blogsPosts": [
+      {
+        "content": "Many young Israelis spend a lot of their time pondering their post-military service trip. It requires intensive research, time, and above all - money. <br/><br/> I had been serving in the IDF for almost 4 years, making most of the money in the last year - NCO year. Then I managed to get some more for my former plan - 9 months of trip, 6 in South America with a good friend of mine and 3 in Africa as a volunteer in a designated program. We planned to embark on January on the trip, starting from Argentina up the globe. <br/><br/> However, life has other plans. <br/><br/> The October 7th events, the most horrific terror attack against Israel, occurred, making a massive impact on everything.  I returned to the military for 2 months of reserved duty, but I haven’t given up on my trip. We eventually started on February in Brazil, one day before the Carnival starts. <br/><br/> Four month has passed since then, we’ve been bouncing between cities and countries, watching a variety of mesmerizing landscapes, raving in great parties, visiting so many attractions. As weird as it sounds, I reached a point where I felt the weight of the endless travel, the unpredictable adventures, and the fleeting connections finally catching up  with me, I started realizing that my life had become a collection of photos and stories that start to repeat themselves. <br/><br/> It’s strange, isn’t it? You think of travel as the ultimate freedom, a never-ending escape from the mundane. Everyone talks about how it broadens your horizons, makes you feel alive, and helps you find your true self. But what happens when that very freedom begins to feel suffocating? When you’ve seen so many different places but still feel stuck in the same routine of moving, packing, and unpacking? <br/><br/> That’s where I was. The constant change, the never-ending flow of new experiences, the different time zones and currencies—it all started to blur together. My once-thrilling “adventure” felt more like a long, drawn-out phase I had overstayed my welcome in. I found myself craving something more stable, something that didn’t come with the anxiety of missing flights or wondering where the next meal would come from. <br/><br/> It wasn’t that I didn’t enjoy spending time with my friend. We’d been inseparable, laughing at the same jokes, sharing long bus rides, and navigating foreign cities together. But I began to see that while we had been traveling as a unit, I had neglected myself. I hadn’t taken a moment to reflect on what I actually wanted. What I truly needed. And I realized that what I wanted—more than anything—was to take control of my life and dive into something that didn’t involve moving every few days or weeks. I gradually started noticing I am too tired to go to parties and long hikes, until I didn’t want to travel anymore. <br/><br/> However, I knew that once I go back home I have to find a job. The war has worsened since we left. The market has much less money invested in, so there are less jobs in the market which is tough for job seekers anyway. But the worst is the difficulty to stay focused while rockets are being shot at me, and while there is a general, bad and pessimistic atmosphere around. <br/><br/> I decided to do something different but I didn’t know what it was. I was sure it has something to do with digital nomadism, maybe freelancing, maybe job searching, maybe some volunteering while I do any of them, but I should start out somewhere. Anyway, I knew I had to buy a laptop and start shaking off the rust on my programming skills.  <br/><br/> As my friend and I sat down for one of our typical evening chats in Medellin, I realized it was time to have that conversation. I didn’t want to leave the adventure behind completely, but I knew I needed to create something meaningful for myself in a way that was sustainable and fulfilling. “I think I need a break,” I told him. “I need to try something else.” I didn’t give up completely about future encounters and travel, but I need to take a different path. <br/><br/> He wasn’t surprised, I left most of our last parties early, and was not really excited to visit the next attraction. We’d been traveling together for so long, it felt like part of our identity, but he understood. He knew that I wasn’t turning my back on him or the experiences we’d shared. It was simply time for me to take a step in a different direction. <br/><br/> The decision wasn’t easy, but it was necessary. For the first time in months, I felt a wave of relief. The pressure of constant motion lifted, and a new kind of excitement took its place. It wasn’t about running away from travel—it was about running toward something that felt more aligned with who I was becoming. Digital nomadism was a blank canvas, a chance to build something entirely new, something that could give me the balance I had been missing. I had no illusions about the challenges that lay ahead. Freelancing or job hunting would require hustle, discipline, and the ability to navigate uncertainty. But I was ready. I had learned so much about myself during these months on the road, and I was determined to take those lessons into the world of solo travelling. <br/><br/> This chapter of my life was coming to a close, but it wasn’t an ending. It was simply a pivot—a shift from one kind of adventure to another. And though I might miss the thrill of traveling with my friend, I knew that my next big adventure would be the one where I got to define my own path.",
+        "date": "2024-6-10",
+        "id": "1",
+        "imageAlt": "Panama City",
+        "imageDesc": "Panama City, the place I bought the laptop",
+        "imageSrc": "/images/panamaCity.jpg",
+        "tags": [
+          "Career Change",
+          "Learning",
+          "Tech Journey"
+        ],
+        "title": "A Different State Of Mind"
+      },
+      {
+        "content": "After going through multiple technical interviews, here are my top tips for success...",
+        "date": "2024-8-29",
+        "id": "2",
+        "imageAlt": "El Salvador",
+        "imageDesc": "Taken on the day I started my job search journey",
+        "imageSrc": "/images/elSalvador.png",
+        "tags": [
+          "Interviews",
+          "Tips",
+          "Career"
+        ],
+        "title": "Freelance Is Not For Everyone"
+      },
+      {
+        "content": "Networking is a powerful tool that can help you land your dream job. Here's how...",
+        "date": "2024-8-9",
+        "id": "3",
+        "imageAlt": "Documentation",
+        "imageDesc": "Capture every detail, it might help you later",
+        "imageSrc": "/images/documentation.jpg",
+        "tags": [
+          "Networking",
+          "Job Search",
+          "Career"
+        ],
+        "title": "The Power Of Documentation"
+      },
+      {
+        "content": "A portfolio is a great way to showcase your skills and experience. Here's why you need one...",
+        "date": "2024-10-1",
+        "id": "4",
+        "imageAlt": "Almost",
+        "imageDesc": "Almost is a concept you might face in your job search journey",
+        "imageSrc": "/images/almost.jpg",
+        "tags": [
+          "Portfolio",
+          "Job Search",
+          "Career"
+        ],
+        "title": "The Moment I Almost Found a Job From 15,000 KM Away"
+      },
+      {
+        "content": "Following up after an interview is a great way to show your interest in the position. Here's how...",
+        "date": "2024-10-10",
+        "id": "5",
+        "imageAlt": "Airplane",
+        "imageDesc": "I am still travelling, right?",
+        "imageSrc": "/images/airplane.jpg",
+        "tags": [
+          "Interviews",
+          "Tips",
+          "Career"
+        ],
+        "title": "Career Break Of The Career Break"
+      },
+      {
+        "content": "A good resume is essential for landing your dream job. Here's how to make yours stand out...",
+        "date": "2024-11-2",
+        "id": "6",
+        "imageAlt": "Home sweet home",
+        "imageDesc": "Great times, but that's it",
+        "imageSrc": "/images/home.jpg",
+        "tags": [
+          "Resume",
+          "Job Search",
+          "Career"
+        ],
+        "title": "Homecoming"
+      }
+    ],
     "general": {
-        "totalApplications": 160,
-        "rejections": 60,
-        "offers": 2,
-        "averageResponseTimeInDays": 2
+      "averageResponseTimeInDays": 2,
+      "offers": 2,
+      "rejections": 60,
+      "totalApplications": 250
     },
     "interviews": [
-        {
-            "id": "1",
-            "companyId": "1",
-            "companyType": "Startup",
-            "productType": ["Cybersecurity"],
-            "position": "Full Stack Developer",
-            "date": "9-8-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product",
-            "duration": 0,
-            "status": "mismatch",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "2",
-            "companyId": "2",
-            "companyType": "Startup",
-            "productType": ["AI", "Virtualization"],
-            "position": "Full Stack Developer",
-            "date": "9-8-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product",
-            "duration": 0,
-            "status": "mismatch",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "3",
-            "companyId": "3",
-            "companyType": "Startup",
-            "productType": ["Cybersecurity"],
-            "position": "Full Stack Developer",
-            "date": "9-9-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
-            "duration": 0,
-            "status": "mismatch",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "4",
-            "companyId": "4",
-            "companyType": "Startup",
-            "productType": ["Cybersecurity"],
-            "position": "Full Stack Developer",
-            "date": "9-12-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
-            "duration": 0,
-            "status": "mismatch",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "5",
-            "companyId": "5",
-            "companyType": "Startup",
-            "productType": ["Environmental"],
-            "position": "Full Stack Developer",
-            "date": "9-15-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's products.",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Herzliya",
-            "time": ""
-        },
-        {
-            "id": "6",
-            "companyId": "6",
-            "companyType": "Startup",
-            "productType": ["Cybersecurity"],
-            "position": "Full Stack Developer",
-            "date": "9-18-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
-            "duration": 0,
-            "status": "mismatch",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "7",
-            "companyId": "5",
-            "companyType": "Startup",
-            "productType": ["Environmental"],
-            "position": "Full Stack Developer",
-            "date": "9-19-2024",
-            "stage": "Technical",
-            "method": "Zoom",
-            "notes": "Discussed deeply about a big project of mine, focusing on data flows. Was also asked a system design question based on their product",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Herzliya",
-            "time": ""
-        },
-        {
-            "id": "8",
-            "companyId": "6",
-            "companyType": "Startup",
-            "productType": ["Cybersecurity"],
-            "position": "Back End Developer",
-            "date": "9-22-2024",
-            "stage": "Team Member",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product. I was asked some short question about Back End development",
-            "duration": 0,
-            "status": "failed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "9",
-            "companyId": "7",
-            "companyType": "Startup",
-            "productType": ["IT", "Cloud"],
-            "position": "Full Stack Developer",
-            "date": "9-22-2024",
-            "stage": "Team Member",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product. I was asked some general questions about dealing with a lot of data in SQL Technology",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "10",
-            "companyId": "7",
-            "companyType": "Startup",
-            "productType": ["IT", "Cloud"],
-            "position": "Full Stack Developer",
-            "date": "9-23-2024",
-            "stage": "Technical",
-            "method": "Zoom",
-            "notes": "Live Node.js coding, classic leetcode intermediate question.",
-            "duration": 0,
-            "status": "failed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "11",
-            "companyId": "8",
-            "companyType": "Startup",
-            "productType": ["Cybersecurity"],
-            "position": "Full Stack Developer",
-            "date": "9-25-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
-            "duration": 0,
-            "status": "mismatch",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "12",
-            "companyId": "5",
-            "companyType": "Startup",
-            "productType": ["Environmental"],
-            "position": "Full Stack Developer",
-            "date": "10-1-2024",
-            "stage": "Assignment",
-            "method": "None",
-            "notes": "Was asked for recommenders while the assignment was being examined. Assignment's technology stack was new for me.",
-            "duration": 0,
-            "status": "failed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Herzliya",
-            "time": ""
-        },
-        {
-            "id": "13",
-            "companyId": "9",
-            "companyType": "National Security",
-            "productType": ["Communication"],
-            "position": "Full Stack Developer",
-            "date": "11-17-2024",
-            "stage": "Technical",
-            "method": "Face to face",
-            "notes": "Was asked about projects, simple leetcode question, multithreading.",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Yehud",
-            "time": ""
-        },
-        {
-            "id": "14",
-            "companyId": "10",
-            "companyType": "National Security",
-            "productType": ["Aviation", "AI"],
-            "position": "Full Stack Developer",
-            "date": "11-20-2024",
-            "stage": "Technical",
-            "method": "Face to face",
-            "notes": "Was asked about projects, focusing technologies. Was also asked to solve a system design question based on their product",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "15",
-            "companyId": "11",
-            "companyType": "Ltd",
-            "productType": ["IT", "Encryption"],
-            "position": "Full Stack Developer",
-            "date": "12-3-2024",
-            "stage": "Technical",
-            "method": "Zoom",
-            "notes": "Was asked about projects, was also asked to solve a leetcode problem",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "16",
-            "companyId": "10",
-            "companyType": "National Security",
-            "productType": ["Aviation", "AI"],
-            "position": "Full Stack Developer",
-            "date": "12-3-2024",
-            "stage": "Department Leader",
-            "method": "Face to face",
-            "notes": "Was asked about projects, was also asked to solve a leetcode problem",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "17",
-            "companyId": "10",
-            "companyType": "National Security",
-            "productType": ["Aviation", "AI"],
-            "position": "Full Stack Developer",
-            "date": "12-3-2024",
-            "stage": "HR",
-            "method": "Face to face",
-            "notes": "Was asked about myself, mostly about bad traits. I was asked to provide 2 recommenders.",
-            "duration": 0,
-            "status": "failed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "18",
-            "companyId": "12",
-            "companyType": "Ltd",
-            "productType": ["Ecommerce"],
-            "position": "Full Stack Developer",
-            "date": "12-4-2024",
-            "stage": "Technical",
-            "method": "Zoom",
-            "notes": "Was asked about projects, was also asked to solve a system design problem based on company's product. Later I was told my answers were good and I was a good match but still lacks knowledge",
-            "duration": 0,
-            "status": "failed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Petah Tikva",
-            "time": ""
-        },
-        {
-            "id": "19",
-            "companyId": "11",
-            "companyType": "Ltd",
-            "productType": ["IT", "Encryption"],
-            "position": "Full Stack Developer",
-            "date": "12-8-2024",
-            "stage": "Tests",
-            "method": "None",
-            "notes": "Integrity and psychotechnical tests.",
-            "duration": 0,
-            "status": "passed",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        },
-        {
-            "id": "20",
-            "companyId": "13",
-            "companyType": "Ltd",
-            "productType": ["Backoffice"],
-            "position": "Full Stack Developer",
-            "date": "12-17-2024",
-            "stage": "Recruiter",
-            "method": "Phone call",
-            "notes": "Discussed my resume, a project of mine and a company's products.",
-            "duration": 0,
-            "status": "mismatch",
-            "summary": "",
-            "interviewer": "",
-            "location": "Tel Aviv",
-            "time": ""
-        }
+      {
+        "companyId": "1",
+        "companyType": "Startup",
+        "date": "9-8-2024",
+        "duration": 15,
+        "id": "1",
+        "interviewer": "Product Recruiter",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Cybersecurity"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>First ever interview. I did not know what to except. When speaking with a recruiter, there is no need to be fully dressed up like a real interview. No need to open a camera. Only a phone call.</p> <p><br></p> <p>She told I was her first developer she interviewed, so I thought how to explain myself the simplest way possible. She told me about their product (I read about it before) and the hierarchial structure of the company. I was asked about my skills and about a project I&apos;ve been working on. I was not fully prepared, so I gave the most recent example even though it was only 1.5 months length and did not elaborate too much about it.</p> <p><br></p> <p>She told me she needs to go, so she told me about the next stages of the process.</p> <p>She hasn&apos;t updated me since then so after 2 days I sent her a message, and few days later I got a rejection email.</p> <p><br></p> <p>Conclusions:</p> <p><br></p> <p>- A conversation with a recruiter is a phone call with no camera involved, no need to be fully dressed up.</p> <p>- MUST choose a project to explain about, which was longer and which I have made a great impact on.</p> <p>- Never ask the recruiter a question regarding your status as long as you&apos;re not about to sign a contract of another company. You can be sure they will respond, just keep going.</p>",
+        "time": "13:00"
+      },
+      {
+        "companyId": "2",
+        "companyType": "Startup",
+        "date": "9-8-2024",
+        "duration": 7,
+        "id": "2",
+        "interviewer": "General Recruiter",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product",
+        "position": "Full Stack Developer",
+        "productType": [
+          "AI",
+          "Virtualization"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>First she explained about the product, then I was asked to tell aboiut myself. I was interrupted by the recruiter after I told her about the contract in the startup I had worked at (Created plugin to an open source system). It sounded like she was confused because my explanation I provided about that product was a little long and complex. I was not even asked about a project of mine. She wanted to proceed with the conversation. I didn&apos;t manage to explain about my reserve duty experience which would have made a great impression (large scale project).</p> <p>During most of the conversation, she sounded like the company might not be interested, &quot;if things get along well&quot;. Her tone said it all. She did not explain a lot about the hiring process.</p> <p>Conclusions:</p> <p>- The explanation about the plugin should be more concise.</p> <p>- I need to tell about my reserved duty service. There are some great technologies there.</p>",
+        "time": "14:00"
+      },
+      {
+        "companyId": "3",
+        "companyType": "Startup",
+        "date": "9-9-2024",
+        "duration": 7,
+        "id": "3",
+        "interviewer": "General Recruiter",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Cybersecurity"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>The interview was stopped once the recruiter realized I am about to go back home only in 2 months. I did informed the recruitment company about that fact.</p> <p>Moreover, the lack of experience of cloud technology was a significant drawback. She sounded a little disappointed once she heard that I don&apos;t have such experience.</p> <p>Conclusions:</p> <p>- The fact that I can&apos;t attend on-site interviews is a massive drawback, bigger than I thought.</p> <p>- Put a bigger emphasis on large scale projects&apos; technologies, such as Consul, Openshift, CI/CD, Redis etc.</p> <p>- I need to make sure My autodidacticism is prominent.</p>",
+        "time": "7"
+      },
+      {
+        "companyId": "4",
+        "companyType": "Startup",
+        "date": "9-12-2024",
+        "duration": 9,
+        "id": "4",
+        "interviewer": "General Recruiter",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Cybersecurity"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>I was asked several times to shorten my explanations about projects I was involved in ang generally about my resume.</p> <p>She sounded worried once I told her I am about to come back home only on October.</p> <p>Conclusions:</p> <p>I need to write a concise summary of my resume, and at least one significant project of mine.</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "5",
+        "companyType": "Startup",
+        "date": "9-15-2024",
+        "duration": 10,
+        "id": "5",
+        "interviewer": "Team Member (as a recruiter)",
+        "location": "Herzliya",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's products.",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Cybersecurity",
+          "Environmental"
+        ],
+        "stage": "Recruiter",
+        "status": "passed",
+        "summary": "<p>Good interview. &nbsp;My explanations were concise and comprehensible.</p> <p>The total atmosphere were fine.</p> <p><br></p> <p>Conclusions:</p> <p>- Stick to the summary, memorize it. Tell about other projects only if you are asked to do so.</p> <p>- Prepare yourself by practicing the tech stack of the company.</p>",
+        "time": "13:00"
+      },
+      {
+        "companyId": "6",
+        "companyType": "Startup",
+        "date": "9-18-2024",
+        "duration": 9,
+        "id": "6",
+        "interviewer": "General Recruiter",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>I talked to much about my first job, even though I memorized this part.</p> <p>They were not informed that I go back home on October.</p> <p><br></p> <p>Conclusions:</p> <p>- Rethink my first job summary.</p> <p>- When sending CV directly to the company, make sure they are informed about availability.</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "5",
+        "companyType": "Startup",
+        "date": "9-19-2024",
+        "duration": 90,
+        "id": "7",
+        "interviewer": "Team Member and Leader",
+        "location": "Herzliya",
+        "method": "Zoom",
+        "notes": "Discussed deeply about a big project of mine, focusing on data flows. Was also asked a system design question based on their product",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Cybersecurity",
+          "Environmental"
+        ],
+        "stage": "Technical",
+        "status": "passed",
+        "summary": "<p>First technical interview, system design oriented.</p> <p>I was asked to explain profoundly about my resume and about a project of mine.</p> <p>This part was ok, then I had to design a system similar to theirs, which collects massive amount of data and should transfer it to the client(s).</p> <p>I mixed technologies and was not focused on the main goal of the question. I felt like using technologies which were unnecessary in retrospect.&nbsp;</p> <p>I felt like I have not managed to design a one-way data flow, large scale design. Good to note that I was very nervous.</p> <p>Eventually I was able to provide a solution, after they focused me more on the goal of the question.</p> <p>When looking back, I underestimated myself, because later they told me it was good enough to proceed to the next stage, even though they didn&apos;t sound like it.</p> <p>Conclusions:</p> <p>- Make sure I stay focused on the technology I speak about.</p> <p>- Never be too excited when there is a breakthrough because it might not work and needs to be examined.</p> <p>- Plan slowly, don&apos;t let the presence of people stress you out.</p> <p>- Don&apos;t beat around the bush, reduce unnecessary components and technologies, or ask if necessary.</p> <p>- In general, focus on system design and the terms included. That is what makes you a Senior, or at least Mid Level, not Junior.</p> <p>- Try to think of the system design of your former projects, think about the good and the bad parts of them.</p>",
+        "time": "13:30"
+      },
+      {
+        "companyId": "7",
+        "companyType": "Startup",
+        "date": "9-22-2024",
+        "duration": 15,
+        "id": "8",
+        "interviewer": "Team Member",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product. I was asked some short question about Back End development",
+        "position": "Back End Developer",
+        "productType": [
+          "Cybersecurity"
+        ],
+        "stage": "Team Member",
+        "status": "failed",
+        "summary": "<p>Short interview, I was asked a question about the benefits of queues, which I probably gave a bad one (microservices communication instead of scalability).</p> <p>Conclusions:</p> <p>- Understand and remember all the benefits of all the tools and technologies which were used in any of the projects I worked on.</p> <p>- My projects&apos; explanations should be elaborated as possible - tech-wise.</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "8",
+        "companyType": "Startup",
+        "date": "9-22-2024",
+        "duration": 15,
+        "id": "9",
+        "interviewer": "Team Leader",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product. I was asked some general questions about dealing with a lot of data in SQL Technology",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT",
+          "Cloud"
+        ],
+        "stage": "Team Member",
+        "status": "passed",
+        "summary": "<p>I was asked some question about my ability to deal with a lot of new knowledge in a short time, and how I would deal with massive amount of data using SQL.</p> <p>I told him I am eager to learn new things, and I am autodidact.</p>",
+        "time": "15:30"
+      },
+      {
+        "companyId": "8",
+        "companyType": "Startup",
+        "date": "9-23-2024",
+        "duration": 60,
+        "id": "10",
+        "interviewer": "Team Leader and a team member",
+        "location": "Tel Aviv",
+        "method": "Zoom",
+        "notes": "Live Node.js coding, classic leetcode intermediate question.",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT",
+          "Cloud"
+        ],
+        "stage": "Technical",
+        "status": "failed",
+        "summary": "<p>Live coding session.</p> <p>I was asked to code a solution for a classic intermediate leetcode question. I was able to choose the language for that. I chose JS.</p> <p>Again, I tried to provide the most efficient solution using unnecessary sorts, which overcomplicated everything. I didn&apos;t take the question apart and again, I was following so called breakthroughs instead of a coherent plan.</p> <p>I also chose JS even though I am better in C# (I thought it would be more relevant, which made me pseudo-code instead of real code because I forgot some function names).</p> <p>Eventually I have made it to a solution, even thought a part of it was written in pseuso-code (was checked using ChatGPT).</p> <p>Conclusions:</p> <p>- Go through the conclusions of your last technical interview.</p> <p>- Don&apos;t neglect system design, but go through some leetcode questions, at least 2 a day!</p> <p>- On live code session, choose the language you know the most, it it more important.</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "9",
+        "companyType": "Startup",
+        "date": "10-10-2024",
+        "duration": 10,
+        "id": "11",
+        "interviewer": "General Recruiter",
+        "location": "Petah Tikva",
+        "method": "Phone call",
+        "notes": "Discussed my resume and company's main product. Interview finished early because the recruiter realized I am not immediately available",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>I was asked to create a new CV with the reserve duty section.</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "5",
+        "companyType": "Startup",
+        "date": "10-10-2024",
+        "duration": 0,
+        "id": "12",
+        "interviewer": "None",
+        "location": "Herzliya",
+        "method": "None",
+        "notes": "Was asked for recommenders while the assignment was being examined. Assignment's technology stack was new for me.",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Cybersecurity",
+          "Environmental"
+        ],
+        "stage": "Assignment",
+        "status": "failed",
+        "summary": "<p>Last stage before offer. I was given a take-home assignment (5 hours of working) that consists of a DB and Lambda that processes the data sent from a data generator.</p> <p>I had a hard time getting all the components working together. I managed to understand the goal of the assignment, but some technologies were new to me. I had some doubts and questions about it but I decided to learn about them hands-on.</p> <p>Eventually I have made it to a solution, but I made some mistakes while trying to understand the technologies.</p> <p>When I went through the code with the team members, there were some question about it I did not know how to answer.</p> <p><br></p> <p>Conclusions:</p> <p>- When given an assignment with new technologies, read about it and focus on the main principles of it. When in doubt, read the docs about it focusing on the relevant issue.</p> <p>- Rethink all lines of code and make sure it consumes less resources as possible.</p>",
+        "time": "None"
+      },
+      {
+        "companyId": "10",
+        "companyType": "National Security",
+        "date": "11-17-2024",
+        "duration": 60,
+        "id": "13",
+        "interviewer": "Team member and Leader",
+        "location": "Yehud",
+        "method": "On site",
+        "notes": "Was asked about projects, two simple leetcode question, multithreading. In retrospect, this was the final stage",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Communication"
+        ],
+        "stage": "Technical",
+        "status": "passed",
+        "summary": "<p>First on-site interview.</p> <p>I was asked about myself, my resume and a project of mine in the first part.</p> <p>Then I was asked two leetcode (tree, stack) questions, and a multithreading questions, all in C#. I managed to answer all of them.</p> <p><br></p> <p>Conclusions:</p> <p>- Make sure to know perfectly how to use asynchronous programming in all the languages I use because of its importance to the performance.</p> <p>- Don&apos;t get too emotional when speaking about the solution, even if you are 100% sure about it.</p>",
+        "time": "14:00"
+      },
+      {
+        "companyId": "11",
+        "companyType": "National Security",
+        "date": "11-20-2024",
+        "duration": 60,
+        "id": "14",
+        "interviewer": "Team Leader",
+        "location": "Tel Aviv",
+        "method": "On site",
+        "notes": "Was asked about projects, focusing technologies. Was also asked to solve a system design question based on their product",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Aviation",
+          "AI"
+        ],
+        "stage": "Technical",
+        "status": "passed",
+        "summary": "<p>I was asked about myself, my resume and to tell about a project of mine in details, in the first part</p> <p>Then I was asked to design a system that collects data from a 3rd party source, processes it and displays it to the user. The scale is small.&nbsp;</p> <p>I managed to give a good solution.</p> <p><br></p> <p>Conclusions:</p> <p>- I used some technologies I was not completely sure about, but eventually they came in handy. I need to make sure to use technologies I know 100%.</p>",
+        "time": "14:00"
+      },
+      {
+        "companyId": "12",
+        "companyType": "Ltd",
+        "date": "12-3-2024",
+        "duration": 30,
+        "id": "15",
+        "interviewer": "Team Leader",
+        "location": "Tel Aviv",
+        "method": "Zoom",
+        "notes": "Was asked about projects, was also asked some technical problem",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT",
+          "Encryption"
+        ],
+        "stage": "Technical",
+        "status": "passed",
+        "summary": "<p>I was asked about myself and about my resume. The interviewer did not understand why I was working for 2 month in a company - it was a designated contract.</p> <p>Then I was asked a leetcode question using binary search, some questions about my GitHub projects and some C# questions.</p> <p>I felt ok with most of my answers.</p> <p><br></p> <p>Conclusions:</p> <p>- Add the word &apos;Contract&apos; to the relevant section in the CV.</p> <p>- Question yourself whether there are areas of knowledge in a technology you might be asked about that you might not know before the interview.</p> <p><br></p> <p><br></p>",
+        "time": "9:00"
+      },
+      {
+        "companyId": "11",
+        "companyType": "National Security",
+        "date": "12-3-2024",
+        "duration": 1,
+        "id": "16",
+        "interviewer": "Department Leader",
+        "location": "Tel Aviv",
+        "method": "Face to face",
+        "notes": "Was asked about projects, was also asked to solve a leetcode problem",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Aviation",
+          "AI"
+        ],
+        "stage": "Department Leader",
+        "status": "passed",
+        "summary": "<p>I was asked about my resume, focusing deeply on projects I was involved in.</p> <p>Then I was asked a leetcode question that consisted of two parts. It involved two stacks. It was a little hard and there was some miscommunication with me and the interviewer. Eventually I came to a solution.</p> <p><br></p> <p>Conclusions:</p> <p>- Read the conclusions of the first technical interview.</p> <p>- Never suggest a solution and say &apos;you might not look for this one&apos; because you never know. it might overcomplicate everything or make the interviewer miss it. Just suggest it, if it is not good enough, you will know.</p>",
+        "time": "14:00"
+      },
+      {
+        "companyId": "11",
+        "companyType": "National Security",
+        "date": "12-3-2024",
+        "duration": 0,
+        "id": "17",
+        "interviewer": "HR",
+        "location": "Tel Aviv",
+        "method": "On site",
+        "notes": "I was asked about myself, my hobbies and my personality.",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Aviation",
+          "AI"
+        ],
+        "stage": "HR",
+        "status": "failed",
+        "summary": "<p>I was asked about myself, my hobbies and my personality.</p> <p>I was asked what the most important thing I look for in a company is, &nbsp;a personality trait I would like to get rid of, and one I would like to acquire.</p> <p>I gave bad, overlapping examples of two traits, which were focusing on a specific problem of mine. Even though I formulated a concise explanation of each trait, I was told by my recommenders that the conversation was focusing predominately on the problem which was wrongly reflected by these traits.</p> <p><br></p> <p>Conclusions:</p> <p>- Rephrase everything!</p> <p>- Think about a different negative trait.</p> <p>- Don&apos;t add unnecessary information. Say what you need, they will direct you with question if needed.&nbsp;</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "13",
+        "companyType": "Ltd",
+        "date": "12-4-2024",
+        "duration": 45,
+        "id": "18",
+        "interviewer": "Team Leader",
+        "location": "Petah Tikva",
+        "method": "Zoom",
+        "notes": "Was asked about projects, was also asked to solve a system design problem based on company's product. Later I was told my answers were good and I was a good match but still lacks knowledge",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Ecommerce"
+        ],
+        "stage": "Technical",
+        "status": "failed",
+        "summary": "<p>I was interview for a large-scale product company. They planned to let me write a new system from scratch using a framework I was proficient in, inspired by the current system that is written in a framework I am also skilled in.</p> <p>I was asked questions about my resume, I was told to design the system of it, focusing on two specific features.</p> <p>Later I was informed I provided great answers, but they were eager to deliver because of internal deadlines and they knew I was not experienced enough to join the team.</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "12",
+        "companyType": "Ltd",
+        "date": "12-8-2024",
+        "duration": 180,
+        "id": "19",
+        "interviewer": "None",
+        "location": "Tel Aviv",
+        "method": "None",
+        "notes": "Integrity and psychotechnical tests.",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT",
+          "Encryption"
+        ],
+        "stage": "Tests",
+        "status": "passed",
+        "summary": "<p>Last stage. I had a short conversation with the CEO, talking about the contract.</p> <p>Then I had online integrity, logical, math and English tests, in the end I had some more integrity tests. I did not know it would have taken so long.</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "14",
+        "companyType": "Startup",
+        "date": "12-17-2024",
+        "duration": 15,
+        "id": "20",
+        "interviewer": "General Recruiter",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume, a project of mine and a company's products.",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Backoffice"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>I was asked about myself and my resume.</p> <p>I was told to tell about a challenged I faced during my career.</p>",
+        "time": "15:00"
+      },  {
+        "companyId": "15",
+        "companyType": "Startup",
+        "date": "01-01-2025",
+        "duration": 20,
+        "id": "21",
+        "interviewer": "Team Member (as a recruiter)",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Discussed my resume, a project of mine and a company's products.",
+        "position": "Full Stack Developer",
+        "productType": [
+          "Medical"
+        ],
+        "stage": "Recruiter",
+        "status": "mismatch",
+        "summary": "<p>I was asked about myself and my resume.</p> <p>I was also told about company's products</p>",
+        "time": "14:00"
+      }, {
+        "companyId": "16",
+        "companyType": "Startup",
+        "date": "01-06-2025",
+        "duration": 60,
+        "id": "22",
+        "interviewer": "Team Member",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Live coding session, discussing company's product",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT", "AI"
+        ],
+        "stage": "Recruiter",
+        "status": "failed",
+        "summary": "<p>I was told to solve a leetcode question (with sub questions and inquirying into the code)</p>",
+        "time": "14:00"
+      },
+      {
+        "companyId": "16",
+        "companyType": "Startup",
+        "date": "01-06-2025",
+        "duration": 60,
+        "id": "23",
+        "interviewer": "Team Member",
+        "location": "Tel Aviv",
+        "method": "Phone call",
+        "notes": "Live coding session, discussing company's product",
+        "position": "Full Stack Developer",
+        "productType": [
+          "IT", "AI"
+        ],
+        "stage": "Recruiter",
+        "status": "failed",
+        "summary": "<p>I was told to solve a leetcode question (with sub questions and inquirying into the code)</p>",
+        "time": "14:00"
+      }, {
+        "companyId": "17",
+        "companyType": "Startup",
+        "date": "01-07-2025",
+        "duration": 90,
+        "id": "25",
+        "interviewer": "None",
+        "location": "Herzliya",
+        "method": "None",
+        "notes": "Online skill assessment",
+        "position": "Back End Developer",
+        "productType": [
+          "Cloud"
+        ],
+        "stage": "Assignment",
+        "status": "passed",
+        "summary": "<p>Time limited, online skill assessment</p>",
+        "time": "14:00"
+      },  {
+        "companyId": "18",
+        "companyType": "Startup",
+        "date": "01-09-2025",
+        "duration": 90,
+        "id": "26",
+        "interviewer": "Team Leader",
+        "location": "Tel Aviv",
+        "method": "On site",
+        "notes": "Technial questions about testing, API and communication",
+        "position": "Full Stack Developer",
+        "productType": [
+          "AI"
+        ],
+        "stage": "Technical",
+        "status": "passed",
+        "summary": "<p>Technial questions about testing, API and communication within App layer, explained about company's products</p>",
+        "time": "13:00"
+      }, {
+        "companyId": "17",
+        "companyType": "Ltd",
+        "date": "01-12-2025",
+        "duration": 45,
+        "id": "27",
+        "interviewer": "Team Leader",
+        "location": "Herzliya",
+        "method": "Zoom",
+        "notes": "Technical questions interview",
+        "position": "Back End Developer",
+        "productType": [
+          "Cloud"
+        ],
+        "stage": "Technical",
+        "status": "passed",
+        "summary": "<p>Technical questions about multiple technologies</p>",
+        "time": "15:00"
+      },
+      {
+        "companyId": "18",
+        "companyType": "Startup",
+        "date": "01-14-2025",
+        "duration": 90,
+        "id": "28",
+        "interviewer": "Team Leader",
+        "location": "Tel Aviv",
+        "method": "On site",
+        "notes": "Technial questions about testing, API and communication",
+        "position": "Full Stack Developer",
+        "productType": [
+          "AI"
+        ],
+        "stage": "Technical",
+        "status": "passed",
+        "summary": "<p>Technial questions about testing, API and communication within App layer, explained about company's products</p>",
+        "time": "13:00"
+      },
+      {
+        "companyId": "19",
+        "companyType": "Startup",
+        "date": "01-15-2025",
+        "duration": 30,
+        "id": "28",
+        "interviewer": "Team Leader",
+        "location": "Herzliya",
+        "method": "On site",
+        "notes": "Technial questions about multiple fields.",
+        "position": "Back End Developer",
+        "productType": [
+          "Cybersecurity"
+        ],
+        "stage": "Technical",
+        "status": "failed",
+        "summary": "<p>Technial questions about technologies and working methods.</p>",
+        "time": "11:30"
+      },
+      {
+        "companyId": "17",
+        "companyType": "Ltd",
+        "date": "01-15-2025",
+        "duration": 60,
+        "id": "29",
+        "interviewer": "HR",
+        "location": "Herzliya",
+        "method": "Zoom",
+        "notes": "HR and Department Leader interview",
+        "position": "Back End Developer",
+        "productType": [
+          "Cloud"
+        ],
+        "stage": "HR",
+        "status": "passed",
+        "summary": "<p>Mostly soft skills questions and more explanations about the company</p>",
+        "time": "11:30"
+      }, {
+        "companyId": "18",
+        "companyType": "Startup",
+        "date": "01-15-2025",
+        "duration": 60,
+        "id": "30",
+        "interviewer": "HR",
+        "location": "Tel Aviv",
+        "method": "On site",
+        "notes": "HR interview",
+        "position": "Full Stack Developer",
+        "productType": [
+          "AI"
+        ],
+        "stage": "HR",
+        "status": "mismatch",
+        "summary": "<p>Mostly soft skills questions and more explanations about the company, I chose to move forward with different company due to timeline issue, therefore there is no real status</p>",
+        "time": "12:30"
+      }
     ],
     "projects": [
-        {
-            "id": "1",
-            "title": "Job Search Tracker",
-            "description": "A full-stack application to track job applications and interview progress, built with React and TypeScript.",
-            "technologies": ["React", "TypeScript", "Material-UI", "Firebase"],
-            "imageUrl": "images/jobSearch.png",
-            "githubUrl": "https://github.com/Falupi22/job-search-blog-post",
-            "liveUrl": "https://job-tracker.demo.com"
-        },
-        {
-            "id": "2",
-            "title": "Mechanic Workshop Appointment Scheduler",
-            "description": "A basic appointment scheduler for a bike workshop.",
-            "technologies": [
-                "React",
-                "TypeScript",
-                "ChakraUI",
-                "Node.js",
-                "MongoDB"
-            ],
-            "imageUrl": "images/trekanic.png",
-            "githubUrl": "https://github.com/Falupi22/trekanic",
-            "liveUrl": "https://portfolio.demo.com"
-        },
-        {
-            "id": "3",
-            "title": "Minecraft AI PixelArt Plugin",
-            "description": "A Minecraft plugin that creates a PixelArt out of a prompt.",
-            "technologies": ["Java", "CraftBukkit (Minexcraft Server)"],
-            "imageUrl": "images/pixelArt.png",
-            "githubUrl": "https://github.com/Falupi22/ai-pixelart-mc-plugin",
-            "liveUrl": "https://portfolio.demo.com"
-        },
-        {
-            "id": "4",
-            "title": "Wifi Auto Connect Service",
-            "description": "The application that makes sure you stay online by handling network connections for you!",
-            "technologies": ["Python", "TkInter"],
-            "imageUrl": "images/wibye.png",
-            "githubUrl": "https://github.com/Falupi22/wi-bye",
-            "liveUrl": "https://portfolio.demo.com"
-        },
-        {
-            "id": "5",
-            "title": "Useful Chrome Extensions",
-            "description": "A curated list of useful extensions for daily usage of Chrome, tailored for developers and normal users alike.",
-            "technologies": ["Javascript"],
-            "imageUrl": "images/extensions.png",
-            "githubUrl": "https://github.com/Falupi22/useful-chrome-extensions",
-            "liveUrl": "https://portfolio.demo.com"
-        }
-    ],
-    "blogsPosts": [
-        {
-            "id": "1",
-            "title": "A Different State Of Mind",
-            "imageSrc": "../public/images/panamaCity.jpg",
-            "imageAlt": "Panama City",
-            "imageDesc": "Panama City, the place I bought the laptop",
-            "content": "Three months ago, I decided to make a career transition into tech. Here's what I've learned so far...",
-            "date": "2024-6-10",
-            "tags": ["Career Change", "Learning", "Tech Journey"]
-        },
-        {
-            "id": "2",
-            "title": "Freelance Is Not For Everyone",
-            "imageSrc": "../public/images/elSalvador.png",
-            "imageAlt": "El Salvador",
-            "imageDesc": "Taken on the day I started my job search journey",
-            "content": "After going through multiple technical interviews, here are my top tips for success...",
-            "date": "2024-8-29",
-            "tags": ["Interviews", "Tips", "Career"]
-        },
-        {
-            "id": "3",
-            "title": "The Power Of Documentation",
-            "imageSrc": "../public/images/documentation.jpg",
-            "imageAlt": "Documentation",
-            "imageDesc": "Capture every detail, it might help you later",
-            "content": "Networking is a powerful tool that can help you land your dream job. Here's how...",
-            "date": "2024-8-9",
-            "tags": ["Networking", "Job Search", "Career"]
-        },
-        {
-            "id": "4",
-            "title": "The Moment I Almost Found a Job From 15,000 KM Away",
-            "imageSrc": "../public/images/almost.jpg",
-            "imageAlt": "Almost",
-            "imageDesc": "Almost is a concept you might face in your job search journey",
-            "content": "A portfolio is a great way to showcase your skills and experience. Here's why you need one...",
-            "date": "2024-10-1",
-            "tags": ["Portfolio", "Job Search", "Career"]
-        },
-        {
-            "id": "5",
-            "title": "Career Break Of The Career Break",
-            "imageSrc": "../public/images/airplane.jpg",
-            "imageAlt": "Airplane",
-            "imageDesc": "I am still travelling, right?",
-            "content": "Following up after an interview is a great way to show your interest in the position. Here's how...",
-            "date": "2024-10-10",
-            "tags": ["Interviews", "Tips", "Career"]
-        },
-        {
-            "id": "6",
-            "title": "Homecoming",
-            "imageSrc": "../public/images/home.jpg",
-            "imageAlt": "Home sweet home",
-            "imageDesc": "Great times, but that's it",
-            "content": "A good resume is essential for landing your dream job. Here's how to make yours stand out...",
-            "date": "2024-11-2",
-            "tags": ["Resume", "Job Search", "Career"]
-        },
-        {
-            "id": "7",
-            "title": "What If?",
-            "imageSrc": "../public/images/question.jpg",
-            "imageAlt": "Question",
-            "imageDesc": "I would never know.",
-            "content": "A cover letter is a great way to introduce yourself to potential employers. Here's how to write a good one...",
-            "date": "2024-12-20",
-            "tags": ["Cover Letter", "Job Search", "Career"]
-        },
-        {
-            "id": "8",
-            "title": "The Ball Is In Your Court",
-            "imageSrc": "../public/images/football.jpg",
-            "imageAlt": "Football",
-            "imageDesc": "My choice, my move",
-            "content": "A cover letter is a great way to introduce yourself to potential employers. Here's how to write a good one...",
-            "date": "2024-12-20",
-            "tags": ["Cover Letter", "Job Search", "Career"]
-        }
-    ],
-    "about": {
-        "name": "Tal Frumkin",
-        "caption": "Aspiring Software Developer",
-        "body": "## My Story\nHello everyone! I am Tal, a 23-year-old software engineer from Israel with a deep passion for technology and software development.\nAfter completing my military service as a full stack engineer, a temporary contract at a startup, and reserve duty, I decided to take a career break and travel through South America. During my travels, I decided to start job hunting. I purchased a laptop, worked on small projects, and began sending out resumes.\n\nTo make the most of this journey, I decided to track and document my job search process. This helped me monitor my progress, identify areas for improvement, and gather valuable insights. Additionally, I wanted to share my experience to help others navigate their own job search journeys. I realized that this process can be long and challenging, so I aimed to provide useful knowledge and guidance to fellow candidates.\n\nEvery journey is different. Everyone starts from a different point. Making comparisons is natural, but don't underestimate or overestimate your own journey. Some people might get hired by the first company they encounter, while others might need to apply to hundreds of jobs. Still, it should be clear that getting hired in the Hi Tech job market is not easy at all for most of us, and it requires a lot of effort, patience, and persistence.\n\nI started working on my job search process while traveling, telling recruiters I would only return home in two months. This isn’t so appealing to many companies. Additionally, the ongoing war has had a massive negative impact on the local job market.\n\n**However, these kinds of obstacles will not stop me! Neither should they stop you!** \n\nMy journey is ongoing, and I am still looking for a job. However, I am excited to continue learning, growing, and maybe even inspiring others along the way.\n\n---\n\n### Skills\n- **Frontend**: React, TypeScript, HTML5, CSS3, WPF, Chakra UI \n- **Backend**: C# .NET Core, Python, Node.js, REST APIs  \n- **Databases**: MongoDB, MSSQL, Redis  \n- **Tools**: Git, Consul, Openshift, Wireshark, Visio  \n- **Soft Skills**: Problem Solving, Team Collaboration, Autodidact  \n\n---\n\n### Goals\n\nMy goal is to join a company where I can contribute to meaningful projects while continuing to learn and grow as a developer. I'm particularly interested in full stack or backend development and creating efficient and reliable systems."
-    }
-}
+      {
+        "description": "A full-stack application to track job applications and interview progress, built with React and TypeScript.",
+        "githubUrl": "https://github.com/Falupi22/job-search-blog-post",
+        "id": "1",
+        "imageUrl": "images/jobSearch.png",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "Material-UI",
+          "Firebase"
+        ],
+        "title": "Job Search Tracker"
+      },
+      {
+        "description": "A basic appointment scheduler for a bike workshop.",
+        "githubUrl": "https://github.com/Falupi22/trekanic",
+        "id": "2",
+        "imageUrl": "images/trekanic.png",
+        "technologies": [
+          "React",
+          "TypeScript",
+          "ChakraUI",
+          "Node.js",
+          "MongoDB"
+        ],
+        "title": "Mechanic Workshop Appointment Scheduler"
+      },
+      {
+        "description": "A Minecraft plugin that creates a PixelArt out of a prompt.",
+        "githubUrl": "https://github.com/Falupi22/ai-pixelart-mc-plugin",
+        "id": "3",
+        "imageUrl": "images/pixelArt.png",
+        "technologies": [
+          "Java",
+          "CraftBukkit (Minexcraft Server)"
+        ],
+        "title": "Minecraft AI PixelArt Plugin"
+      },
+      {
+        "description": "The application that makes sure you stay online by handling network connections for you!",
+        "githubUrl": "https://github.com/Falupi22/wi-bye",
+        "id": "4",
+        "imageUrl": "images/wibye.png",
+        "technologies": [
+          "Python",
+          "TkInter"
+        ],
+        "title": "Wifi Auto Connect Service"
+      },
+      {
+        "description": "A curated list of useful extensions for daily usage of Chrome, tailored for developers and normal users alike.",
+        "githubUrl": "https://github.com/Falupi22/useful-chrome-extensions",
+        "id": "5",
+        "imageUrl": "images/extensions.png",
+        "technologies": [
+          "Javascript"
+        ],
+        "title": "Useful Chrome Extensions"
+      }
+    ]
+  }

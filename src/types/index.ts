@@ -26,7 +26,7 @@ export enum Stage {
     HR = 'HR',
     DepartmentLeader = 'Department Leader',
     Assignment = 'Assignment',
-    Tests = 'Tests',
+    Tests = 'Tests'
 }
 
 export interface Interview {
@@ -39,7 +39,7 @@ export interface Interview {
     stage: Stage
     method: string
     notes: string
-    status: Status
+    status: Status,
     summary: string
     duration: number
     interviewer: string
@@ -60,9 +60,6 @@ export interface Project {
 export interface BlogPost {
     id: string
     title: string
-    imageSrc: string
-    imageAlt: string
-    imageDesc: string
     content: string
     date: string
     tags: string[]

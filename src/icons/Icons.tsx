@@ -1,3 +1,4 @@
+import { Icon } from "@mui/material"
 import { ProductType } from '../types'
 import { TooltipWrapper } from './TooltipWrapper'
 
@@ -61,6 +62,22 @@ const BackofficeTooltip = () => (
         src='/icons/backoffice.svg'
         alt='Backoffice'
     />
+)
+
+export const RocketTooltip = () => (
+    <Icon
+        sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            filter: theme =>
+                theme.palette.mode === 'dark' ? 'invert(1)' : 'none',
+            width: '400px',
+            height: '200px'
+        }}
+    >
+        <img src='/icons/rocket.svg' width={200} height={200} alt='Rocket' />
+    </Icon>
 )
 
 const Icons: Record<ProductType, React.FC> = {

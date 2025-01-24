@@ -27,6 +27,9 @@ const InterviewList = ({ interviews }: InterviewListProps) => {
     const [open, setOpen] = useState(false)
     const [selectedInterview, setSelectedInterview] =
         useState<Interview | null>(null)
+    if (selectedInterview) {
+        // You can destructure selectedInterview here if needed
+    }
     const [hoveredRow, setHoveredRow] = useState<string | null>(null)
 
     const handleClickOpen = (interview: Interview) => {
@@ -64,7 +67,7 @@ const InterviewList = ({ interviews }: InterviewListProps) => {
                     </TableHead>
                     <TableBody>
                         {interviews
-                            ?.map(interview => (
+                            .map(interview => (
                                 <TableRow
                                     key={interview.id}
                                     style={{
@@ -100,7 +103,14 @@ const InterviewList = ({ interviews }: InterviewListProps) => {
                                             color={
                                                 getStatusColor(
                                                     interview.status,
-                                                ) as any
+                                                ) as
+                                                    | 'default'
+                                                    | 'primary'
+                                                    | 'secondary'
+                                                    | 'error'
+                                                    | 'info'
+                                                    | 'success'
+                                                    | 'warning'
                                             }
                                             size='small'
                                         />

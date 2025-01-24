@@ -33,21 +33,55 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
 
     return (
         <Box>
-            <Typography variant='h4' gutterBottom mb={4}>
+            <Typography variant='h4' gutterBottom mb={2}>
                 A Long, Challenging Journey
             </Typography>
+                        <Box 
+                            display='grid' 
+                            gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
+                            gap={2} 
+                            alignItems='center'
+                            width='100%'
+                        >
+                            <Typography 
+                                variant='h6' 
+                                paragraph 
+                                sx={{ 
+                                    backgroundColor: (theme) => theme.palette.background.paper, 
+                                    borderRadius: '15px', 
+                                    padding: 3,
+                                    opacity: 0.9, // Slightly higher opacity
+                                    width: '100%', // Full width
+                                    boxShadow: 1, // Add shadow for depth
+                                    fontStyle: 'italic', // Italic font style
+                                    textAlign: 'center', // Center text alignment
+                                    lineHeight: 1.6, // Increase line height for readability
+                                    height: '100%', // Full height
+                                    display: 'flex',
+                                    alignItems: 'center'
+                                }}
+                            >
+                                My journey began few months ago while I was travelling across
+                                America. Since I decided to look for a job while on career
+                                break, I devoted myself to the challenging process, while
+                                tracking it and gathering information and statistics, to help me
+                                and more candidates with their process.
+                            </Typography>
+                        
+                                <img 
+                                    src='images/dashboard-light.png' 
+                                    alt='Dashboard' 
+                                    style={{ 
+                                        width: '100%', 
+                                        height: '100%', 
+                                        objectFit: 'cover', 
+                                        borderRadius: '15px' 
+                                    }} 
+                                />
+                        </Box>
 
-            <Typography variant='body1' paragraph>
-                My journey began three months ago while I was travelling across
-                America. Since I decided to look for a job while on career
-                break, I devoted myself to the challenging process, while
-                tracking it and gathering information and statistics, to help me
-                and more candidates with their process.
-            </Typography>
-
-            <Typography variant='h5' mb={4} mt={3} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
-                As for now, I haven't found a job yet, but I keep gathering some
-                interesting stats!
+            <Typography variant='h5' mb={4} mt={4} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
+                I Made it! I landed a job at a great company, it was worth the effort!
             </Typography>
 
             <Box ref={generalStatsRef} style={{ transformOrigin: '0 0 0' }}>
