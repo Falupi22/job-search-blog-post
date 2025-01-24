@@ -37,9 +37,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
             <Typography variant='h4' gutterBottom mb={2}>
                 A Long, Challenging Journey
             </Typography>
-            <Box ref={coverRef}>
-            <Fade in={coverInView} timeout={1000}>
-            <Box 
+                        <Box 
                             display='grid' 
                             gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
                             gap={2} 
@@ -51,11 +49,9 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                                 paragraph 
                                 sx={{ 
                                     backgroundColor: (theme) => theme.palette.background.paper, 
-                                    borderRadius: '15px', 
                                     padding: 3,
                                     opacity: 0.9, // Slightly higher opacity
                                     width: '100%', // Full width
-                                    boxShadow: 1, // Add shadow for depth
                                     fontStyle: 'italic', // Italic font style
                                     textAlign: 'center', // Center text alignment
                                     lineHeight: 1.6, // Increase line height for readability
@@ -72,6 +68,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                             </Typography>
                         
                                 <img 
+                                onLoad={() => document.body.style.visibility = 'visible'}
                                     src='images/dashboard-light.png' 
                                     alt='Dashboard' 
                                     style={{ 
@@ -82,9 +79,6 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                                     }} 
                                 />
                         </Box>
-            </Fade>
-            </Box>
-                        
 
             <Typography variant='h5' mb={4} mt={4} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
                 I Made it! I landed a job at a great company, it was worth the effort!
