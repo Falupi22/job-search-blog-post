@@ -5,6 +5,7 @@ import { StatsPieChart } from '../components/stats/StatsPieChart'
 import useCalcStats from './useCalcStats'
 import { Interview } from '../types'
 import { useInView } from 'react-intersection-observer';
+import { useState } from "react"
 
 interface DashboardProps {
     general: {
@@ -31,26 +32,22 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
     const { ref: generalStatsRef, inView: generalStatsInView } = useInView({ triggerOnce: true });
     const { ref: interviewLabelRef, inView: interviewLabelInView } = useInView({ triggerOnce: true });
     const { ref: companiesLabelRef, inView: companiesLabelInView } = useInView({ triggerOnce: true });
+    const [imgLoading, setImgLoading] = useState(true);
 
     return (
         <Box>
             <Typography variant='h4' gutterBottom mb={2}>
                 A Long, Challenging Journey
             </Typography>
-            <Box ref={coverRef} height="100vh">
-                <Box 
-                    display='grid' 
-                    gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
-                    gap={2} 
-                    alignItems='center'
-                    width='100%'
-                >
-                    <Box sx={{ width: '100%', height: '100%' }} />
-                    <Box sx={{ width: '100%', height: '100%' }} />
-                </Box>
-                <Fade in={coverInView} timeout={1000}>
+            <Box ref={coverRef} height="100%">
+            <Box
+                display={imgLoading ? 'block' : 'none'} 
+                height='100vh'
+            />
+            <Box display={imgLoading ? 'none' : 'grid'}>
+                    <Fade in={coverInView} timeout={1000}>
                     <Box 
-                        display='grid' 
+                    display='grid'
                         gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
                         gap={2} 
                         alignItems='center'
@@ -93,6 +90,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                         >
                             <img src='images/dashboard-light.png' 
                                 alt='Dashboard' 
+                                onLoad={() => setImgLoading(false)}
                                 style={{ 
                                     width: '100%', 
                                     height: '100%', 
@@ -103,9 +101,10 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                         </Box>
                     </Box>
                 </Fade>
+                </Box>
             </Box>
 
-            <Typography variant='h5' mb={4} mt={4} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
+            <Typography variant='h5' mb={4} mt={4} p={5} alignContent='center' textAlign='center' fontWeight='bold'>
                 I Made it! I landed a job at a great company, it was worth the effort!
             </Typography>
 
