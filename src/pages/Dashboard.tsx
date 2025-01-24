@@ -37,7 +37,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
             <Typography variant='h4' gutterBottom mb={2}>
                 A Long, Challenging Journey
             </Typography>
-            <Box ref={coverRef}>
+            <Box ref={coverRef} height="100vh">
                 <Box 
                     display='grid' 
                     gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
