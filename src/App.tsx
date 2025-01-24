@@ -10,7 +10,7 @@ import { ProductType, Stage, Status } from './types'
 import BlogPageProvider from './pages/blog/BlogPageProvider'
 import useFirebase from './firebase/useFirebase'
 import localData from '../data/data.json'
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
     const { data, error } = useFirebase()
