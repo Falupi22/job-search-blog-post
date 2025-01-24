@@ -37,48 +37,73 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
             <Typography variant='h4' gutterBottom mb={2}>
                 A Long, Challenging Journey
             </Typography>
-                        <Box 
-                            display='grid' 
-                            gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
-                            gap={2} 
-                            alignItems='center'
-                            width='100%'
+            <Box ref={coverRef}>
+                <Box 
+                    display='grid' 
+                    gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
+                    gap={2} 
+                    alignItems='center'
+                    width='100%'
+                >
+                    <Box sx={{ width: '100%', height: '100%' }} />
+                    <Box sx={{ width: '100%', height: '100%' }} />
+                </Box>
+                <Fade in={coverInView} timeout={1000}>
+                    <Box 
+                        display='grid' 
+                        gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
+                        gap={2} 
+                        alignItems='center'
+                        width='100%'
+                    >
+                        <Typography 
+                            variant='h6' 
+                            paragraph 
+                            sx={{ 
+                                backgroundColor: (theme) => theme.palette.background.paper, 
+                                padding: 3,
+                                opacity: 0.9, // Slightly higher opacity
+                                width: '100%', // Full width
+                                fontStyle: 'italic', // Italic font style
+                                textAlign: 'center', // Center text alignment
+                                lineHeight: 1.6, // Increase line height for readability
+                                height: '100%', // Full height
+                                display: 'flex',
+                                alignItems: 'center'
+                            }}
                         >
-                            <Typography 
-                                variant='h6' 
-                                paragraph 
-                                sx={{ 
-                                    backgroundColor: (theme) => theme.palette.background.paper, 
-                                    padding: 3,
-                                    opacity: 0.9, // Slightly higher opacity
-                                    width: '100%', // Full width
-                                    fontStyle: 'italic', // Italic font style
-                                    textAlign: 'center', // Center text alignment
-                                    lineHeight: 1.6, // Increase line height for readability
-                                    height: '100%', // Full height
-                                    display: 'flex',
-                                    alignItems: 'center'
-                                }}
-                            >
-                                My journey began few months ago while I was travelling across
-                                America. Since I decided to look for a job while on career
-                                break, I devoted myself to the challenging process, while
-                                tracking it and gathering information and statistics, to help me
-                                and more candidates with their process.
-                            </Typography>
-                        
-                                <img 
-                                onLoad={() => document.body.style.visibility = 'visible'}
-                                    src='images/dashboard-light.png' 
-                                    alt='Dashboard' 
-                                    style={{ 
-                                        width: '100%', 
-                                        height: '100%', 
-                                        objectFit: 'cover', 
-                                        borderRadius: '15px' 
-                                    }} 
-                                />
+                            My journey began few months ago while I was travelling across
+                            America. Since I decided to look for a job while on career
+                            break, I devoted myself to the challenging process, while
+                            tracking it and gathering information and statistics, to help me
+                            and more candidates with their process.
+                        </Typography>
+                    
+                        <Box 
+                            sx={{ 
+                                width: '100%', 
+                                height: '100%', 
+                                display: 'flex', 
+                                justifyContent: 'center', 
+                                alignItems: 'center', 
+                                backgroundColor: (theme) => theme.palette.background.default,
+                                borderRadius: '15px',
+                                overflow: 'hidden'
+                            }}
+                        >
+                            <img src='images/dashboard-light.png' 
+                                alt='Dashboard' 
+                                style={{ 
+                                    width: '100%', 
+                                    height: '100%', 
+                                    objectFit: 'cover', 
+                                    display: 'block'
+                                }} 
+                            />
                         </Box>
+                    </Box>
+                </Fade>
+            </Box>
 
             <Typography variant='h5' mb={4} mt={4} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
                 I Made it! I landed a job at a great company, it was worth the effort!
