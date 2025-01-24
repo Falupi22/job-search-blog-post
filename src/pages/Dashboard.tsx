@@ -27,6 +27,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
         totalInterviews,
     } = useCalcStats(interviews)
 
+    const { ref: coverRef, inView: coverInView } = useInView({ triggerOnce: true });
     const { ref: generalStatsRef, inView: generalStatsInView } = useInView({ triggerOnce: true });
     const { ref: interviewLabelRef, inView: interviewLabelInView } = useInView({ triggerOnce: true });
     const { ref: companiesLabelRef, inView: companiesLabelInView } = useInView({ triggerOnce: true });
@@ -36,7 +37,9 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
             <Typography variant='h4' gutterBottom mb={2}>
                 A Long, Challenging Journey
             </Typography>
-                        <Box 
+            <Box ref={coverRef}>
+            <Fade in={coverInView} timeout={1000}>
+            <Box 
                             display='grid' 
                             gridTemplateColumns={{ xs: '1fr', md: '1fr 1fr' }} 
                             gap={2} 
@@ -79,6 +82,9 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
                                     }} 
                                 />
                         </Box>
+            </Fade>
+            </Box>
+                        
 
             <Typography variant='h5' mb={4} mt={4} height='20vh' alignContent='center' textAlign='center' fontWeight='bold'>
                 I Made it! I landed a job at a great company, it was worth the effort!
