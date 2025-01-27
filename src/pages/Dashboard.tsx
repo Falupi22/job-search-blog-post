@@ -105,7 +105,7 @@ export const Dashboard = ({ interviews, general }: DashboardProps) => {
             </Box>
 
             <Typography variant='h5' mb={4} mt={4} p={5} alignContent='center' textAlign='center' fontWeight='bold'>
-                I Made it! I landed a job at a great company, it was worth the effort!
+                Goog things take time, don't give up!
             </Typography>
 
             <Box ref={generalStatsRef} style={{ transformOrigin: '0 0 0' }}>
