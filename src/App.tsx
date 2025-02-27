@@ -35,7 +35,7 @@ function App() {
     const { interviews, blogPosts, projects, general, about } = memoData
 
     if (import.meta.env.VITE_MAINTENANCE) {
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+        return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
             <Typography variant='h3' style={{ color: '#D4AF37', fontFamily: 'serif', textAlign: 'center' }}>
             Under Maintenance
             </Typography>
