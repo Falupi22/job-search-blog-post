@@ -11,6 +11,7 @@ import BlogPageProvider from './pages/blog/BlogPageProvider'
 import useFirebase from './firebase/useFirebase'
 import localData from '../data/data.json'
 import { Analytics } from "@vercel/analytics/react"
+import { Typography } from "@mui/material"
 
 function App() {
     const { data, error } = useFirebase()
@@ -33,6 +34,10 @@ function App() {
 
     const { interviews, blogPosts, projects, general, about } = memoData
 
+    if (process.env.VITE_MAINTENANCE) {
+        return <Typography variant='h1'>Under Maintenance</Typography>
+    }
+    
     return (data &&
         <ThemeProvider>
             <BrowserRouter>
