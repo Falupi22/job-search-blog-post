@@ -2,8 +2,7 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "./src/global/maintenance.html",
-        "status": 503
+        "dest": "./src/global/maintenance.html"
       }
     ]
   }
