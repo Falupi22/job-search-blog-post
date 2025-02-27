@@ -34,7 +34,7 @@ function App() {
 
     const { interviews, blogPosts, projects, general, about } = memoData
 
-    if (process.env.VITE_MAINTENANCE) {
+    if (import.meta.env.VITE_MAINTENANCE) {
         return <Typography variant='h1'>Under Maintenance</Typography>
     }
     
