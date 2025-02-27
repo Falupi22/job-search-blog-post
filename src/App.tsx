@@ -36,7 +36,7 @@ function App() {
 
     if (import.meta.env.VITE_MAINTENANCE) {
         return <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <Typography variant='h3' style={{ color: '#D4AF37', fontFamily: 'serif', textAlign: 'center' }}>
+            <Typography variant='h3' style={{ fontFamily: 'serif', textAlign: 'center' }}>
             Under Maintenance
             </Typography>
         </div>
